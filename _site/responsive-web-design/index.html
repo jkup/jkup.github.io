@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Your Name" />
+    
+      <meta name="description" content="A Blog about Linux Programming and Misinformation..." />
+    
+    <title>Responsive Web Design</title>
+    <link rel="stylesheet" href="../style.css" type="text/css" media="screen">
+  </head>
+  <body>
+    <header>
+      <a href="/">
+        <h1>Jon Kuperman</h1>
+        <h2>A Blog about Linux, Programming and Misinformation...</h2>
+      </a>
+    </header>
+    <div id="wrapper">
+      <section>
+        <div class="content">
+  <div id="post">
+    <h1>Responsive Web Design</h1>
+    <p><img src="http://www.jonkuperman.com/images/RWD-feature.png" alt="Responsive Web Design"/></p>
+
+<p>I've been thinking a lot lately about responsive web design. It was most of the inspiration behind me building this site. This book by Ethan Marcotte has been my driving force lately but I don't want to get ahead of myself.</p>
+
+<h2>What Is Responsive Web Design</h2>
+
+<p>A common misconception is that responsive web design and fluid width websites are the same thing. The big difference is that responsive web design uses <strong>CSS3 Media Queries</strong> to re-style elements based on screen size. This means that elements don't just shrink and grow, they adapt.</p>
+
+<p>Perhaps the most common use of responsive web design is using media queries to toss an element ( usually a sidebar ) down below the main content area. This allows the important information, like the content, to fill up smaller screens while less important data in the sidebar can be shuffled down below.</p>
+
+<h2>Why It Matters</h2>
+
+<p>Responsive Design is particularly important in this day an age because of how many different devices we have browsing the internet.  Are your users going to be viewing your website on a phone? a tablet? a laptop or desktop? With screen sizes ranging from 300px wide to over 1900px, shouldn't you have a website that accommodates it all.</p>
+
+<p>With a fixed width, non-responsive website you are guaranteeing a sub-par experience for at least some of your visitors. For example, if you make a standard 960px wide website, you giving a horizontal scroll to anyone with a smaller screen ( including people using Windows 7's new half-sized window feature ), and at the same time your website will look tiny to anyone with a 1900+ pixel monitor.</p>
+
+<h2>Information Architecture</h2>
+
+<p>Honestly, I'm really not sure what <em>Information Architecture</em> means but I've decided to go ahead and use it anyway. One important part of responsive design is deciding what information should be highlighted if some has to be shuffled below. If you're using media queries to shuffle elements of your website, which ones <em>deserve</em> to stay up at the top?</p>
+
+<h2>Where To Go From Here</h2>
+
+<p>If you're looking to get into responsive design, you should check out the following resources:</p>
+
+<ul>
+<li><p><a href="http://css-tricks.com/">CSS Tricks - A great blog and a great example of responsive design</a></p></li>
+<li><p><a href="http://www.abookapart.com/products/responsive-web-design">Reponsive Web Design - A Book Apart's awesome book on responsive design</a></p></li>
+<li><p><a href="http://designmodo.com/responsive-design-examples/">Design Modo - An amazing visual round-up of responsive design</a></p></li>
+</ul>
+
+
+  </div>
+</div>
+
+      </section>
+      <aside>
+        <ul>
+          <li>
+            <a href="/about.html">
+              About Me
+            </a>
+          </li>
+          <li>
+            <a href="/archives.html">
+              Complete Archives
+            </a>
+          </li>
+          <li>
+            <a href="/feed.xml">
+              RSS
+            </a>
+          </li>
+        </ul>
+        <p>
+          I'm a web programmer in my mid-twenties. I run a <a href="http://www.insitedesignlab.com/">Michigan Web Design Company</a> I'm an avid Linux enthusiast, PHP developer and I love building web applications.
+        </p>
+        <a href="https://twitter.com/insitedesignlab" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @insitedesignlab</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </aside>
+    </div>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21008844-11']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+</script>
+  </body>
+</html>

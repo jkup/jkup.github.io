@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Your Name" />
+    {% if page.description %}
+      <meta name="description" content="{{page.description}}" />
+    {% else %}
+      <meta name="description" content="{{site.description}}" />
+    {% endif %}
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="../style.css" type="text/css" media="screen">
+  </head>
+  <body>
+    <header>
+      <a href="/">
+        <h1>Jon Kuperman</h1>
+        <h2>A Blog about Linux, Programming and Misinformation...</h2>
+      </a>
+    </header>
+    <div id="wrapper">
+      <section>
+        {{ content }}
+      </section>
+      <aside>
+        <ul>
+          <li>
+            <a href="/about.html">
+              About Me
+            </a>
+          </li>
+          <li>
+            <a href="/archives.html">
+              Complete Archives
+            </a>
+          </li>
+          <li>
+            <a href="/feed.xml">
+              RSS
+            </a>
+          </li>
+        </ul>
+        <p>
+          I'm a web programmer in my mid-twenties. I run a <a href="http://www.insitedesignlab.com/">Michigan Web Design Company</a> I'm an avid Linux enthusiast, PHP developer and I love building web applications.
+        </p>
+        <a href="https://twitter.com/insitedesignlab" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @insitedesignlab</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </aside>
+    </div>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21008844-11']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+</script>
+  </body>
+</html>
