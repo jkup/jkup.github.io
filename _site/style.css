@@ -234,18 +234,27 @@ you can use the generic selector below, but it's slower:
 	 margin-right: 10px;
 }
 @media screen and (max-width:960px) {
-    body {
-    font-size: 18px;
+	 body {
+		  font-size: 18px;
+	 }
+	 section {
+		  width: 100%;
+		  margin: 0 auto;
+		  line-height: 27px;
+	 }
+	 aside {
+		  width: 80%;
+		  margin: 0 auto;
+	 }
+	 #wrapper {
+		  width: 100%;
+	 }
 }
-section {
-    max-width: 100%;
-    margin: 0 auto;
-    line-height: 35px;
-}
-aside {
-    width: 80%;
-    margin: 0 auto;
-}
-#wrapper {
-    width: 100%}
+@media screen and (max-width:500px) {
+	 body {
+		  font-size: 12px;
+	 }
+	 section {
+		  line-height: 19px;
+	 }
 }
