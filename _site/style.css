@@ -233,6 +233,20 @@ you can use the generic selector below, but it's slower:
 	 float: left;
 	 margin-right: 10px;
 }
+.social-icons {
+	 width: 160px;
+	 margin: 0 auto;
+}
+.fs2 {
+	 display: inline;
+	 color: #d54937;
+	 float: left;
+	 margin-right: 20px;
+	 font-size: 20px;
+}
+.fs2:hover {
+	 color: #333;
+}
 @media screen and (max-width:960px) {
 	 body {
 		  font-size: 18px;
