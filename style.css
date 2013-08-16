@@ -179,6 +179,20 @@ aside iframe {
 	 float: left;
 	 margin: 0 15px 15px 0;
 }
+.job-title {
+    text-transform: uppercase;
+    font-weight: bold;
+	 font-size: 16px;
+	 margin-top: 40px;
+	 color: #333333;
+}
+.sub-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: -10px;
+	 color: #666666;
+}
 @font-face {
 	 font-family: 'icomoon';
 	 src:url('fonts/icomoon.eot');
