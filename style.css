@@ -7783,23 +7783,12 @@ ol, ul {
   clear: both;
 }
 /* line 41, scss/style.scss */
-.content aside {
-  position: relative;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  width: 50%;
-  float: left;
-}
-/* line 48, scss/style.scss */
-.content article {
-  position: relative;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  width: 50%;
-  float: left;
+.content .center {
+  display: block;
+  margin: 0 auto;
 }
 
-/* line 57, scss/style.scss */
+/* line 47, scss/style.scss */
 aside {
   background: #F5F5F5;
   width: 100%;
@@ -7819,17 +7808,17 @@ aside:before, aside:after {
 aside:after {
   clear: both;
 }
-/* line 61, scss/style.scss */
+/* line 51, scss/style.scss */
 aside .nav {
   float: left;
 }
-/* line 65, scss/style.scss */
+/* line 55, scss/style.scss */
 aside .nav li {
   list-style: none;
   float: left;
 }
 
-/* line 71, scss/style.scss */
+/* line 61, scss/style.scss */
 footer {
   width: 100%;
   margin-left: auto;

@@ -12,4 +12,5 @@ title: Jon Kuperman
       </div>
       {% endfor %}
   </div>
+  <a href="/archives.html" class="center button large">Read More Posts...</a>
 </div>
