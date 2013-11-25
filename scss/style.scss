@@ -1,0 +1,81 @@
+@import "settings";
+@import "foundation";
+
+body {
+  background-image: url('images/bg.jpg');
+}
+
+.tools {
+  max-width: 740px;
+  min-width: 181px;
+  margin: 0 auto;
+}
+
+header {
+  @include grid-row;
+
+  background: #085A78;
+  padding: 25px 100px;
+  position: relative;
+
+  h1, h2, h3 { color: #FFF; }
+
+  .social-icons { display: none; }
+  @media #{$medium-up} {
+    .social-icons {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+ol, ul { list-style-type: square; }
+
+.content {
+  background: #FFF;
+  padding: 50px;
+  @include grid-row;
+
+  aside  {
+    @include grid-column($columns:6);
+    // @media #{$medium-up} {
+    //   @include grid-column($columns:3);
+    // }
+  }
+
+  article  {
+    @include grid-column($columns:6);
+    // @media #{$medium-up} {
+    //   @include grid-column($columns:8, $offset: 1);
+    // }
+  }
+
+}
+
+aside {
+  background: #F5F5F5;
+  @include grid-row;
+
+  .nav {
+    float: left;
+  }
+
+  .nav li {
+    list-style: none;
+    float: left;
+  }
+}
+
+footer {
+  @include grid-row;
+
+  background: #333;
+  color: #FFF;
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  line-height: 45px;
+  margin: 0 auto;
+}
