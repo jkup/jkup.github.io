@@ -3,7 +3,7 @@ layout: post
 title: Jonathan Kuperman
 ---
 
-### Programmer. Speaker. Teacher.
+### Programmer. Speaker. Entrepreneur.
 
 My name is Jonathan Kuperman. I'm a web developer living in Ann Arbor, Michigan. I like to play with:
 
