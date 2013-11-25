@@ -3,4 +3,5 @@ permalink: /:title
 rdiscount extensions: [smart]
 name: Jon Kuperman
 description: A Blog about Linux Programming and Misinformation...
+exclude: /scss
 #url: http://www.jonkuperman.com
