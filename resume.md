@@ -11,7 +11,7 @@ title: Jonathan Kuperman
 I'm currently working as a Web Developer on the Backup product at Barracuda Networks. I specialize in PHP and JavaScript, working on both back-end and front-end applications.
 
 <hr />
-### Insite Design Lab
+<img src="/images/insite.png" alt="Insite Design Lab" />
 <h4 class="subheader">January, 2011 - March, 2013</h4>
 
 For two years I ran my own web consulting agency under the name of <b>Insite Design Lab</b> I ran a team of three and we took jobs doing web design and application development. We specialized in PHP, WordPress, MySQL and JavaScript applications.

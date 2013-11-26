@@ -7722,6 +7722,26 @@ textarea {
 }
 
 /* line 18, scss/style.scss */
+.top-bar .toggle-topbar.menu-icon {
+  top: 20px;
+  width: 50px;
+}
+
+/* line 23, scss/style.scss */
+.social-icons {
+  display: none;
+}
+
+@media only screen and (min-width: 40.063em) {
+  /* line 25, scss/style.scss */
+  .social-icons {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+/* line 33, scss/style.scss */
 header {
   width: 100%;
   margin-left: auto;
@@ -7744,40 +7764,27 @@ header:after {
   clear: both;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 18, scss/style.scss */
+  /* line 33, scss/style.scss */
   header {
     padding: 0 100px;
   }
 }
-/* line 29, scss/style.scss */
+/* line 44, scss/style.scss */
 header .subtitle {
   margin: -15px 0 0 15px;
   color: #008cba;
 }
-/* line 34, scss/style.scss */
+/* line 49, scss/style.scss */
 header h1, header h2, header h3 {
   color: #FFF;
 }
-/* line 36, scss/style.scss */
-header .social-icons {
-  display: none;
-}
-@media only screen and (min-width: 40.063em) {
-  /* line 38, scss/style.scss */
-  header .social-icons {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
 
-/* line 47, scss/style.scss */
+/* line 52, scss/style.scss */
 ol, ul {
   list-style-type: square;
 }
 
-/* line 49, scss/style.scss */
+/* line 54, scss/style.scss */
 .content {
   background: #FFF;
   padding: 50px;
@@ -7798,13 +7805,13 @@ ol, ul {
 .content:after {
   clear: both;
 }
-/* line 54, scss/style.scss */
+/* line 59, scss/style.scss */
 .content .center {
   display: block;
   margin: 0 auto;
 }
 
-/* line 60, scss/style.scss */
+/* line 65, scss/style.scss */
 aside {
   background: #F5F5F5;
   width: 100%;
@@ -7824,23 +7831,30 @@ aside:before, aside:after {
 aside:after {
   clear: both;
 }
-/* line 64, scss/style.scss */
+/* line 69, scss/style.scss */
 aside .nav {
   float: left;
 }
-/* line 68, scss/style.scss */
+/* line 73, scss/style.scss */
 aside .nav li {
   list-style: none;
   float: left;
+  width: 100%;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 80, scss/style.scss */
+  aside .nav li {
+    width: auto;
+  }
 }
 
-/* line 74, scss/style.scss */
+/* line 86, scss/style.scss */
 .top-bar a img {
   width: 45px;
   float: left;
 }
 
-/* line 79, scss/style.scss */
+/* line 91, scss/style.scss */
 footer {
   width: 100%;
   margin-left: auto;
