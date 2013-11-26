@@ -6,8 +6,14 @@
 			"email": $('#contact_email').val(),
 			"message": $('#contact_message').val()
 		};
-		$.post( "contact.php", function( data ) {
-			console.log('worked!');
+		console.log(data);
+		$.ajax({
+			method: "POST",
+			url: "contact.php",
+			data: data,
+			success: function(response) {
+				$('.input').toggle().html(response);
+			}
 		});
 	});
 }());
