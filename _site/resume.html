@@ -52,7 +52,7 @@
                 </a>
               </li>
             </ul>
-            <ul class="right">
+            <ul class="right social-icons">
               <a href="https://www.facebook.com/jon.kuperman">
                  <img src="/images/facebook.png" />
               </a>
@@ -126,11 +126,11 @@
       <div id="myModal" class="reveal-modal" data-reveal>
         <h2>Send me a message!</h2>
         <p class="lead">I love talking tech.</p>
-        <form>
-          <input type="text" placeholder="Your name..." />
-          <input type="text" placeholder="Your email..." />
-          <textarea placeholder="Your awesome message!"></textarea>
-          <input type="submit" value="Send" />
+        <form method="POST" action="" id="contact">
+          <input type="text" id="contact_name" name="name" placeholder="Your name..." />
+          <input type="text" id="contact_email" name="name" placeholder="Your email..." />
+          <textarea name="message" id="contact_message" placeholder="Your awesome message!"></textarea>
+          <input class="button" id="submit" type="submit" value="Send" />
         </form>
         <a class="close-reveal-modal">&#215;</a>
       </div>
@@ -149,6 +149,7 @@
     <script src="js/foundation.js"></script>
     <script src="js/foundation.topbar.js"></script>
     <script src="js/foundation.reveal.js"></script>
+    <script src="js/script.js"></script>
     <script>
       $(document).foundation();
     </script>
