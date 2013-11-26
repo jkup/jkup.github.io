@@ -12,26 +12,9 @@
   </head>
   <body>
     <header>
-      <div class="right social-icons">
-        <a href="https://www.facebook.com/jon.kuperman">
-           <img src="/images/facebook.png" />
-        </a>
-        <a href="http://www.linkedin.com/pub/jonathan-kuperman/16/77b/b33">
-           <img src="/images/linkedin.png" />
-        </a>
-        <a href="https://twitter.com/thecodeplanet">
-           <img src="/images/twitter.png" />
-        </a>
-        <a href="https://github.com/m1ck3y">
-           <img src="/images/github.png" />
-        </a>
-        <a href="/feed.xml">
-           <img src="/images/rss.jpg" />
-        </a>
-      </div>
       <a href="/">
         <h1>Jon Kuperman</h1>
-        <h3>A Blog about Linux, Programming and Misinformation...</h3>
+        <h3>Personal website, blog and portfolio</h3>
       </a>
     </header>
     <div id="wrapper">
@@ -58,16 +41,33 @@
               </li>
               <li class="divider"></li>
               <li>
-                <a href="/blog">
+                <a href="/blog.html">
                   Blog
                 </a>
               </li>
               <li class="divider"></li>
               <li>
-                <a href="/archives.html">
-                  Complete Archives
+                <a href="#" data-reveal-id="myModal">
+                  Contact Me
                 </a>
               </li>
+            </ul>
+            <ul class="right">
+              <a href="https://www.facebook.com/jon.kuperman">
+                 <img src="/images/facebook.png" />
+              </a>
+              <a href="http://www.linkedin.com/pub/jonathan-kuperman/16/77b/b33">
+                 <img src="/images/linkedin.png" />
+              </a>
+              <a href="https://twitter.com/thecodeplanet">
+                 <img src="/images/twitter.png" />
+              </a>
+              <a href="/feed.xml">
+                 <img src="/images/rss.jpg" />
+              </a>
+              <a href="https://github.com/m1ck3y">
+                 <img src="/images/github.png" />
+              </a>
             </ul>
           </section>
         </nav>
@@ -76,16 +76,9 @@
         <div class="content">
   <div id="post">
     <h1>About Jon Kuperman</h1>
-    <p><img class="bio-pic" src="/images/jon.jpg" alt="Jon Kuperman" />
-I'm a web programmer in my mid-twenties. I run a Michigan Web Design Company I'm an avid Linux enthusiast, PHP developer and I love building web applications.</p>
+    <p><img class="bio-pic" src="/images/jon_at_wcc.jpg" alt="Jon Kuperman" /></p>
 
-<p>I'm currently working as a Software Engineer for Barracuda Networks on their Backup product.</p>
-
-<p>I run the <a href="http://www.meetup.com/ann-arbor-php-mysql/">PHP User Group</a> in Ann Arbor. I love <a href="http://www.oscon.com/oscon2013/public/schedule/speaker/160963">Speaking at Conferences</a> across the country.</p>
-
-<p>In my free time I love playing soccer, hanging out with my dogs and my awesome <a href="http://www.kellyking.me">girlfriend Kelly King</a>!</p>
-
-<p>If you like the same things and want to talk, send me <a href="mailto:jon@insitedesignlab.com?Subject=Awesome%20things">an email</a> and we'll chat!</p>
+<p>I'm a web programmer in my mid-twenties. I run a Michigan Web Design Company I'm an avid Linux enthusiast, PHP developer and I love building web applications. I'm currently working as a Software Engineer for Barracuda Networks on their Backup product. I run the <a href="http://www.meetup.com/ann-arbor-php-mysql/">PHP User Group</a> in Ann Arbor. I love <a href="http://www.oscon.com/oscon2013/public/schedule/speaker/160963">Speaking at Conferences</a> across the country. In my free time I love playing soccer, hanging out with my dogs and my awesome <a href="http://www.kellyking.me">girlfriend Kelly King</a>! If you like the same things and want to talk, send me <a href="mailto:jon@insitedesignlab.com?Subject=Awesome%20things">an email</a> and we'll chat!</p>
 
   </div>
 </div>
@@ -100,6 +93,17 @@ I'm a web programmer in my mid-twenties. I run a Michigan Web Design Company I'm
           </ul>
         </section>
       </footer>
+      <div id="myModal" class="reveal-modal" data-reveal>
+        <h2>Send me a message!</h2>
+        <p class="lead">I love talking tech.</p>
+        <form>
+          <input type="text" placeholder="Your name..." />
+          <input type="text" placeholder="Your email..." />
+          <textarea placeholder="Your awesome message!"></textarea>
+          <input type="submit" value="Send" />
+        </form>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
@@ -114,6 +118,7 @@ I'm a web programmer in my mid-twenties. I run a Michigan Web Design Company I'm
     </script>
     <script src="js/foundation.js"></script>
     <script src="js/foundation.topbar.js"></script>
+    <script src="js/foundation.reveal.js"></script>
     <script>
       $(document).foundation();
     </script>
