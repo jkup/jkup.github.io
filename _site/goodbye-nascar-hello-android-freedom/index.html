@@ -20,7 +20,7 @@
     </header>
     <div id="wrapper">
       <aside>
-        <nav class="top-bar">
+        <nav class="top-bar" data-topbar>
           <section class="top-bar-section">
             <ul class="nav">
               <li>
@@ -170,7 +170,9 @@
     <script src="js/foundation.reveal.js"></script>
     <script src="js/script.js"></script>
     <script>
-      $(document).foundation();
+      $(document).ready(function() {
+        $(document).foundation();
+      });
     </script>
   </body>
 </html>

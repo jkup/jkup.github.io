@@ -7731,7 +7731,6 @@ header {
   max-width: 62.5rem;
   *zoom: 1;
   background: #152831;
-  padding: 10px 100px;
   position: relative;
 }
 /* line 165, scss/bower_components/foundation/scss/foundation/components/_global.scss */
@@ -7743,16 +7742,22 @@ header:before, header:after {
 header:after {
   clear: both;
 }
-/* line 25, scss/style.scss */
+@media only screen and (min-width: 40.063em) {
+  /* line 18, scss/style.scss */
+  header {
+    padding: 10px 100px;
+  }
+}
+/* line 28, scss/style.scss */
 header h1, header h2, header h3 {
   color: #FFF;
 }
-/* line 27, scss/style.scss */
+/* line 30, scss/style.scss */
 header .social-icons {
   display: none;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 29, scss/style.scss */
+  /* line 32, scss/style.scss */
   header .social-icons {
     display: block;
     position: absolute;
@@ -7761,12 +7766,12 @@ header .social-icons {
   }
 }
 
-/* line 38, scss/style.scss */
+/* line 41, scss/style.scss */
 ol, ul {
   list-style-type: square;
 }
 
-/* line 40, scss/style.scss */
+/* line 43, scss/style.scss */
 .content {
   background: #FFF;
   padding: 50px;
@@ -7787,13 +7792,13 @@ ol, ul {
 .content:after {
   clear: both;
 }
-/* line 45, scss/style.scss */
+/* line 48, scss/style.scss */
 .content .center {
   display: block;
   margin: 0 auto;
 }
 
-/* line 51, scss/style.scss */
+/* line 54, scss/style.scss */
 aside {
   background: #F5F5F5;
   width: 100%;
@@ -7813,23 +7818,23 @@ aside:before, aside:after {
 aside:after {
   clear: both;
 }
-/* line 55, scss/style.scss */
+/* line 58, scss/style.scss */
 aside .nav {
   float: left;
 }
-/* line 59, scss/style.scss */
+/* line 62, scss/style.scss */
 aside .nav li {
   list-style: none;
   float: left;
 }
 
-/* line 65, scss/style.scss */
+/* line 68, scss/style.scss */
 .top-bar a img {
   width: 45px;
   float: left;
 }
 
-/* line 70, scss/style.scss */
+/* line 73, scss/style.scss */
 footer {
   width: 100%;
   margin-left: auto;
