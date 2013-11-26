@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Jonathan Kuperman
 ---
 
 ### Programmer. Speaker. Entrepreneur.
 
-My name is Jonathan Kuperman. I'm a web developer living in Ann Arbor, Michigan. I like to play with:
+<h4 class="subheader">My name is Jonathan Kuperman. I'm a web developer living in Ann Arbor, Michigan. I like to play with:</h4>
+
+<hr />
 
 <div class="tools">
 	<img src="images/behat.png" />
@@ -21,11 +22,5 @@ My name is Jonathan Kuperman. I'm a web developer living in Ann Arbor, Michigan.
 	<img src="images/requirejs.jpg" />
 	<img src="images/sass.jpg" />
 </div>
-<br />
 
 <hr />
-
-<h3 class="subheader">I Live in Ann Arbor</h3>
-<h3 class="subheader">I Talk at Conferences</h3>
-<h3 class="subheader">I Work at Barracuda Networks</h3>
-<h3 class="subheader">I Teach at the Ann Arbor PHP Usergroup</h3>

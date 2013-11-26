@@ -7730,7 +7730,8 @@ header {
   margin-bottom: 0;
   max-width: 62.5rem;
   *zoom: 1;
-  background: #152831;
+  background: #074e68;
+  height: 90px;
   position: relative;
 }
 /* line 165, scss/bower_components/foundation/scss/foundation/components/_global.scss */
@@ -7745,19 +7746,24 @@ header:after {
 @media only screen and (min-width: 40.063em) {
   /* line 18, scss/style.scss */
   header {
-    padding: 10px 100px;
+    padding: 0 100px;
   }
 }
-/* line 28, scss/style.scss */
+/* line 29, scss/style.scss */
+header .subtitle {
+  margin: -15px 0 0 15px;
+  color: #008cba;
+}
+/* line 34, scss/style.scss */
 header h1, header h2, header h3 {
   color: #FFF;
 }
-/* line 30, scss/style.scss */
+/* line 36, scss/style.scss */
 header .social-icons {
   display: none;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 32, scss/style.scss */
+  /* line 38, scss/style.scss */
   header .social-icons {
     display: block;
     position: absolute;
@@ -7766,12 +7772,12 @@ header .social-icons {
   }
 }
 
-/* line 41, scss/style.scss */
+/* line 47, scss/style.scss */
 ol, ul {
   list-style-type: square;
 }
 
-/* line 43, scss/style.scss */
+/* line 49, scss/style.scss */
 .content {
   background: #FFF;
   padding: 50px;
@@ -7792,13 +7798,13 @@ ol, ul {
 .content:after {
   clear: both;
 }
-/* line 48, scss/style.scss */
+/* line 54, scss/style.scss */
 .content .center {
   display: block;
   margin: 0 auto;
 }
 
-/* line 54, scss/style.scss */
+/* line 60, scss/style.scss */
 aside {
   background: #F5F5F5;
   width: 100%;
@@ -7818,23 +7824,23 @@ aside:before, aside:after {
 aside:after {
   clear: both;
 }
-/* line 58, scss/style.scss */
+/* line 64, scss/style.scss */
 aside .nav {
   float: left;
 }
-/* line 62, scss/style.scss */
+/* line 68, scss/style.scss */
 aside .nav li {
   list-style: none;
   float: left;
 }
 
-/* line 68, scss/style.scss */
+/* line 74, scss/style.scss */
 .top-bar a img {
   width: 45px;
   float: left;
 }
 
-/* line 73, scss/style.scss */
+/* line 79, scss/style.scss */
 footer {
   width: 100%;
   margin-left: auto;
