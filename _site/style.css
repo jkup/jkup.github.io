@@ -7717,23 +7717,29 @@ body {
 }
 
 /* line 14, scss/style.scss */
+.date {
+  float: right;
+  font-size: 12px;
+}
+
+/* line 19, scss/style.scss */
 textarea {
   min-height: 100px;
 }
 
-/* line 18, scss/style.scss */
+/* line 23, scss/style.scss */
 .top-bar .toggle-topbar.menu-icon {
   top: 20px;
   width: 50px;
 }
 
-/* line 23, scss/style.scss */
+/* line 28, scss/style.scss */
 .social-icons {
   display: none;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 25, scss/style.scss */
+  /* line 30, scss/style.scss */
   .social-icons {
     display: block;
     position: absolute;
@@ -7741,7 +7747,7 @@ textarea {
     right: 0;
   }
 }
-/* line 33, scss/style.scss */
+/* line 38, scss/style.scss */
 header {
   width: 100%;
   margin-left: auto;
@@ -7764,27 +7770,27 @@ header:after {
   clear: both;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 33, scss/style.scss */
+  /* line 38, scss/style.scss */
   header {
     padding: 0 100px;
   }
 }
-/* line 44, scss/style.scss */
+/* line 49, scss/style.scss */
 header .subtitle {
   margin: -15px 0 0 15px;
   color: #008cba;
 }
-/* line 49, scss/style.scss */
+/* line 54, scss/style.scss */
 header h1, header h2, header h3 {
   color: #FFF;
 }
 
-/* line 52, scss/style.scss */
+/* line 57, scss/style.scss */
 ol, ul {
   list-style-type: square;
 }
 
-/* line 54, scss/style.scss */
+/* line 59, scss/style.scss */
 .content {
   background: #FFF;
   padding: 50px;
@@ -7805,13 +7811,13 @@ ol, ul {
 .content:after {
   clear: both;
 }
-/* line 59, scss/style.scss */
+/* line 64, scss/style.scss */
 .content .center {
   display: block;
   margin: 0 auto;
 }
 
-/* line 65, scss/style.scss */
+/* line 70, scss/style.scss */
 aside {
   background: #F5F5F5;
   width: 100%;
@@ -7831,30 +7837,36 @@ aside:before, aside:after {
 aside:after {
   clear: both;
 }
-/* line 69, scss/style.scss */
+/* line 74, scss/style.scss */
 aside .nav {
   float: left;
 }
-/* line 73, scss/style.scss */
+/* line 78, scss/style.scss */
 aside .nav li {
   list-style: none;
   float: left;
   width: 100%;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 80, scss/style.scss */
+  /* line 85, scss/style.scss */
   aside .nav li {
     width: auto;
   }
 }
 
-/* line 86, scss/style.scss */
+/* line 91, scss/style.scss */
 .top-bar a img {
   width: 45px;
   float: left;
 }
 
-/* line 91, scss/style.scss */
+/* line 96, scss/style.scss */
+.menu-icon {
+  color: #FFF;
+  cursor: pointer;
+}
+
+/* line 101, scss/style.scss */
 footer {
   width: 100%;
   margin-left: auto;
