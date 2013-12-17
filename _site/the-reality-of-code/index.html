@@ -6,9 +6,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="author" content="Your Name" />
     
-      <meta name="description" content="A Blog about Linux Programming and Misinformation..." />
+      <meta name="description" content="Coming to grips with code in the wild." />
     
-    <title>Who Uses Twitter</title>
+    <title>The Reality of Code</title>
     <link rel="stylesheet" href="../style.css" type="text/css" media="screen">
   </head>
   <body>
@@ -79,38 +79,72 @@
       <section>
         <div class="content">
   <div id="post">
-    <h1>Who Uses Twitter</h1>
-    <p><img src="/images/twitter.jpg" alt="who uses twitter" /></p>
+    <h1>The Reality of Code</h1>
+    <p>College does many things poorly. Perhaps nothing more poorly than preparing you for what code looks like in the <em>wild</em>.</p>
 
-<p>So, I’ve been using Twitter for a while now at <a href="http://twitter.com/insitedesignlab">@insitedesignlab</a> for my work and I think I’m finally getting the hang of it. It’s obvious to me that it is a great marketing and education tool but I can’t help but wonder how to use it as a form of social media.</p>
+<h3>Academia</h3>
 
-<h2>How I Use Twitter</h2>
+<p>When in school, you learn about all of the building blocks of Computer Science. Variables, Arrays, Classes, Objects, you learn how they work. You use them repeatedly in reduced test cases and maybe you create your own moderately large application.</p>
 
-<p>I’ve been on Twitter for about 6 months now and I’ve gone through a few different strategies for getting the most out of it.</p>
+<p>You are taught what the tools do and how they should be used. You are totally unprepared to see how they are <strong>actually</strong> used. You learn about OOP, S.O.L.I.D principles, unit-testing and all about writing modular code that is easy to maintain.</p>
 
-<p>At first I tried using Twitter as though it were some streaming RSS Feed. I only subscribed to my favorite blogs and kept an eye out for updates.</p>
+<p>You learn to write and read code that looks like this:</p>
 
-<p>This worked quite well at first. I’d check in and see what new posts were circulating the internet in my field, reading them as I went. But after a while it started to feel lonely.</p>
+<pre><code class="language-php">
+class MyClass extends ParentClass {
 
-<p>Then I tried making friends on Twitter. I followed some advice I had seen on a few blogs and waiting for people I followed to ask questions, jumping in to answer them. I did this about 10 times and two things happened:</p>
+    //dependency injected constructor
+    public function __construct($emailConnection) {
+        $this->email = $emailConnection;
+    }
 
-<ol>
-<li>No one ever wrote me back</li>
-<li>None of them ever followed me</li>
-</ol>
+}
+</code></pre>
 
 
-<p>Now, I understand that most of the people I follow are famous and have thousands of followers themselves but it was certainly discouraging to not get a single response.</p>
+<p>But then, you get your first job.</p>
 
-<h2>The Real Problem</h2>
+<h3>The Sad Reality</h3>
 
-<p>Thinking back on the issue, I’m fairly sure the real problem is that I don’t have any of my real friends on Twitter. It seems to me that Twitter is a great tool and your followers easily grow from somewhat of a snowball effect. My issue, being that I don’ t have the initial amount of snow necessary to start the snowball.</p>
+<p>Now, there is a slight chance, depending on your area, language of choice and the specific company you end up working for, that this won't happen to you. However it is my prediction that most of you will end up staring at something similar to this:</p>
 
-<p>You’re The Solution!</p>
+<pre><code class="language-php">
+}
 
-<p>Wanna help my problem and get your Twitter account going as well? <a href="http://twitter.com/insitedesignlab">Add me on Twitter and let’s start talking!</a></p>
+//line 489 of a 2500 line file, loose file with functions strewn everywhere
 
-<p>I’m really looking to meet some people that are interested in web development and maybe collaborate on some awesome projects!</p>
+//no namespaces, mystery meat parameters
+function product_db_connector_array_merge_tool($id, $start, $end, $range, $topVar, $date, $apex) {
+    require('db/tools/mysql/someconstants.php');
+    require('db/helpers/mysql/otherconstants.php');
+    require('db/helpers/fixed.php'); //what does this even do?
+
+    //where are these variables even coming from?
+    if($array_data_recursive_output['lastDate'] == $data_array_flush)
+        return false;
+}
+
+//here we go again...
+function product_db_connector_array_merge_helper($newId, $start, $range, $topVar, $date, $apex) {
+
+</code></pre>
+
+
+<p>It's kind of like starting over. You learned all of these best practices, now you'll have to learn what 10 years of business decisions and compromise look like. You'll need a new toolkit to brace this type of project. You'll need to be able to use tools like <a href="http://beyondgrep.com/">Ack</a> to search through a big codebase quickly and <a href="http://git-scm.com/">git</a> to provide some commit context to specific code descisions that may make little to no sense.</p>
+
+<h3>The Takeaway</h3>
+
+<p>It is super important to learn how to work with codebases like this as this is what many companies have to work with and you ( most likely ) need a job. However, it is also important that you don't forget where you came from. Keep striving towards that ideal and try to leave everyday knowing you brought the code one step closer to meeting it.</p>
+
+<h3>There is Hope</h3>
+
+<p>Also keep in mind that many people have successfully conquered tech debt and behemoth codebases and come out the other side. Here are a few resources as you come to grips with <strong>the reality of code</strong>.</p>
+
+<ul>
+<li><a href="http://mikehadlow.blogspot.co.uk/2013/12/are-your-programmers-working-hard-or.html">Are Your Programmers Working Hard, Or Are They Lazy?</a></li>
+<li><a href="http://paul-m-jones.com/archives/2667">It Was Like That When I Got Here: Steps Toward Modernizing a Legacy Codebase</a></li>
+</ul>
+
 
   </div>
 </div>

@@ -7,6 +7,79 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>The Reality of Code</title>
+				<description>&lt;p&gt;College does many things poorly. Perhaps nothing more poorly than preparing you for what code looks like in the &lt;em&gt;wild&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Academia&lt;/h3&gt;
+
+&lt;p&gt;When in school, you learn about all of the building blocks of Computer Science. Variables, Arrays, Classes, Objects, you learn how they work. You use them repeatedly in reduced test cases and maybe you create your own moderately large application.&lt;/p&gt;
+
+&lt;p&gt;You are taught what the tools do and how they should be used. You are totally unprepared to see how they are &lt;strong&gt;actually&lt;/strong&gt; used. You learn about OOP, S.O.L.I.D principles, unit-testing and all about writing modular code that is easy to maintain.&lt;/p&gt;
+
+&lt;p&gt;You learn to write and read code that looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;
+class MyClass extends ParentClass {
+
+    //dependency injected constructor
+    public function __construct($emailConnection) {
+        $this-&gt;email = $emailConnection;
+    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;But then, you get your first job.&lt;/p&gt;
+
+&lt;h3&gt;The Sad Reality&lt;/h3&gt;
+
+&lt;p&gt;Now, there is a slight chance, depending on your area, language of choice and the specific company you end up working for, that this won&#39;t happen to you. However it is my prediction that most of you will end up staring at something similar to this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;
+}
+
+//line 489 of a 2500 line file, loose file with functions strewn everywhere
+
+//no namespaces, mystery meat parameters
+function product_db_connector_array_merge_tool($id, $start, $end, $range, $topVar, $date, $apex) {
+    require(&#39;db/tools/mysql/someconstants.php&#39;);
+    require(&#39;db/helpers/mysql/otherconstants.php&#39;);
+    require(&#39;db/helpers/fixed.php&#39;); //what does this even do?
+
+    //where are these variables even coming from?
+    if($array_data_recursive_output[&#39;lastDate&#39;] == $data_array_flush)
+        return false;
+}
+
+//here we go again...
+function product_db_connector_array_merge_helper($newId, $start, $range, $topVar, $date, $apex) {
+
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;p&gt;It&#39;s kind of like starting over. You learned all of these best practices, now you&#39;ll have to learn what 10 years of business decisions and compromise look like. You&#39;ll need a new toolkit to brace this type of project. You&#39;ll need to be able to use tools like &lt;a href=&quot;http://beyondgrep.com/&quot;&gt;Ack&lt;/a&gt; to search through a big codebase quickly and &lt;a href=&quot;http://git-scm.com/&quot;&gt;git&lt;/a&gt; to provide some commit context to specific code descisions that may make little to no sense.&lt;/p&gt;
+
+&lt;h3&gt;The Takeaway&lt;/h3&gt;
+
+&lt;p&gt;It is super important to learn how to work with codebases like this as this is what many companies have to work with and you ( most likely ) need a job. However, it is also important that you don&#39;t forget where you came from. Keep striving towards that ideal and try to leave everyday knowing you brought the code one step closer to meeting it.&lt;/p&gt;
+
+&lt;h3&gt;There is Hope&lt;/h3&gt;
+
+&lt;p&gt;Also keep in mind that many people have successfully conquered tech debt and behemoth codebases and come out the other side. Here are a few resources as you come to grips with &lt;strong&gt;the reality of code&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://mikehadlow.blogspot.co.uk/2013/12/are-your-programmers-working-hard-or.html&quot;&gt;Are Your Programmers Working Hard, Or Are They Lazy?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://paul-m-jones.com/archives/2667&quot;&gt;It Was Like That When I Got Here: Steps Toward Modernizing a Legacy Codebase&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+				<pubDate>Mon, 16 Dec 2013 00:00:00 -0500</pubDate>
+				<link>/the-reality-of-code</link>
+				<guid isPermaLink="true">/the-reality-of-code</guid>
+			</item>
+		
+			<item>
 				<title>Parisian Adventure, Take 2</title>
 				<description>&lt;h2&gt;Morning&lt;/h2&gt;
 
@@ -472,27 +545,6 @@ They will not wikify their content.&lt;/p&gt;
 				<pubDate>Mon, 24 Oct 2011 00:00:00 -0400</pubDate>
 				<link>/goodbye-nascar-hello-android-freedom</link>
 				<guid isPermaLink="true">/goodbye-nascar-hello-android-freedom</guid>
-			</item>
-		
-			<item>
-				<title>What Is Technorati</title>
-				<description>&lt;p&gt;&lt;img src=&quot;/images/technorati.jpg&quot; alt=&quot;what is technorati&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Technorati serves a few purposes, I’m just not clear on what it does for publishers.&lt;/p&gt;
-
-&lt;p&gt;*hidden motive, I have to post this Technorati code, Q779M4W4TU7H  , in a post to claim this blog. I though I might as well use it to write a full fledged blog post.&lt;/p&gt;
-
-&lt;h2&gt;Why Technorati Is Awesome&lt;/h2&gt;
-
-&lt;p&gt;I think it’s totally great to have a master list of all existing blogs. I think it’s awesome to keep statistics on the state of the blogosphere and Technorati does it well. I even think it’s great to give blogs numerical rankings and highlight blogs that are quickly on the rise.&lt;/p&gt;
-
-&lt;h2&gt;Where I’m Confused&lt;/h2&gt;
-
-&lt;p&gt;What I don’t understand is what the benefit is for claiming your blog as a publisher. Will having your blog claimed get you more traffic or better your blog in any way? I don’t think it does and I don’t see a reason to claim my blogs. Yet I’m also not famous or super successful so I’ll continue to follow the trend.&lt;/p&gt;
-</description>
-				<pubDate>Sun, 23 Oct 2011 00:00:00 -0400</pubDate>
-				<link>/what-is-technorati</link>
-				<guid isPermaLink="true">/what-is-technorati</guid>
 			</item>
 		
 	</channel>

@@ -7704,42 +7704,302 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 4, scss/style.scss */
+/**
+ * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
+ * @author Tim  Shedor
+ */
+/* line 8, scss/prism.scss */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: black;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+/* line 28, scss/prism.scss */
+pre[class*="language-"] {
+  position: relative;
+  padding: 1em;
+  margin: .5em 0;
+  -webkit-box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+  -moz-box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+  box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+  border-left: 10px solid #358ccb;
+  background-color: #fdfdfd;
+  background-image: -webkit-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+  background-image: -moz-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+  background-image: -ms-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+  background-image: -o-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+  background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
+  background-size: 3em 3em;
+  background-origin: content-box;
+  overflow: visible;
+  max-height: 30em;
+}
+
+/* line 48, scss/prism.scss */
+code[class*="language"] {
+  max-height: 29em;
+  display: block;
+  overflow: scroll;
+}
+
+/* Margin bottom to accomodate shadow */
+/* line 56, scss/prism.scss */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: #fdfdfd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+}
+
+/* Inline code */
+/* line 65, scss/prism.scss */
+:not(pre) > code[class*="language-"] {
+  position: relative;
+  padding: .2em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em;
+  color: #c92c2c;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 78, scss/prism.scss */
+pre[class*="language-"]:before,
+pre[class*="language-"]:after {
+  content: '';
+  z-index: -2;
+  display: block;
+  position: absolute;
+  bottom: 0.75em;
+  left: 0.18em;
+  width: 40%;
+  height: 20%;
+  -webkit-box-shadow: 0px 13px 8px #979797;
+  -moz-box-shadow: 0px 13px 8px #979797;
+  box-shadow: 0px 13px 8px #979797;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
+/* line 98, scss/prism.scss */
+:not(pre) > code[class*="language-"]:after,
+pre[class*="language-"]:after {
+  right: 0.75em;
+  left: auto;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+/* line 112, scss/prism.scss */
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #7D8B99;
+}
+
+/* line 116, scss/prism.scss */
+.token.punctuation {
+  color: #5F6364;
+}
+
+/* line 126, scss/prism.scss */
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.function-name,
+.token.constant,
+.token.symbol {
+  color: #c92c2c;
+}
+
+/* line 134, scss/prism.scss */
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.function,
+.token.builtin {
+  color: #2f9c0a;
+}
+
+/* line 141, scss/prism.scss */
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+  color: #a67f59;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 149, scss/prism.scss */
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.class-name {
+  color: #1990b8;
+}
+
+/* line 154, scss/prism.scss */
+.token.regex,
+.token.important {
+  color: #e90;
+}
+
+/* line 158, scss/prism.scss */
+.language-css .token.string,
+.style .token.string {
+  color: #a67f59;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 163, scss/prism.scss */
+.token.important {
+  font-weight: normal;
+}
+
+/* line 167, scss/prism.scss */
+.token.entity {
+  cursor: help;
+}
+
+/* line 171, scss/prism.scss */
+.namespace {
+  opacity: .7;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 177, scss/prism.scss */
+  pre[class*="language-"]:before,
+  pre[class*="language-"]:after {
+    bottom: 14px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+}
+/* Plugin styles */
+/* line 189, scss/prism.scss */
+.token.tab:not(:empty):before,
+.token.cr:before,
+.token.lf:before {
+  color: #e0d7d1;
+}
+
+/* line 193, scss/prism.scss */
+pre.line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+/* line 199, scss/prism.scss */
+pre.line-numbers > code {
+  position: relative;
+}
+
+/* line 203, scss/prism.scss */
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 220, scss/prism.scss */
+.line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+
+/* line 226, scss/prism.scss */
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+/* line 5, scss/style.scss */
 body {
   background-image: url("images/bg.jpg");
 }
 
-/* line 8, scss/style.scss */
+/* line 9, scss/style.scss */
+pre {
+  margin: 10px 0 20px 0;
+  white-space: pre-wrap;
+}
+
+/* line 14, scss/style.scss */
 .tools {
   max-width: 740px;
   min-width: 181px;
   margin: 0 auto;
 }
 
-/* line 14, scss/style.scss */
+/* line 20, scss/style.scss */
 .date {
   float: right;
   font-size: 12px;
+  line-height: 37px;
 }
 
-/* line 19, scss/style.scss */
+/* line 26, scss/style.scss */
 textarea {
   min-height: 100px;
 }
 
-/* line 23, scss/style.scss */
+/* line 30, scss/style.scss */
 .top-bar .toggle-topbar.menu-icon {
   top: 20px;
   width: 50px;
 }
 
-/* line 28, scss/style.scss */
+/* line 35, scss/style.scss */
 .social-icons {
   display: none;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 30, scss/style.scss */
+  /* line 37, scss/style.scss */
   .social-icons {
     display: block;
     position: absolute;
@@ -7747,7 +8007,7 @@ textarea {
     right: 0;
   }
 }
-/* line 38, scss/style.scss */
+/* line 45, scss/style.scss */
 header {
   width: 100%;
   margin-left: auto;
@@ -7770,27 +8030,27 @@ header:after {
   clear: both;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 38, scss/style.scss */
+  /* line 45, scss/style.scss */
   header {
     padding: 0 100px;
   }
 }
-/* line 49, scss/style.scss */
+/* line 56, scss/style.scss */
 header .subtitle {
   margin: -15px 0 0 15px;
   color: #008cba;
 }
-/* line 54, scss/style.scss */
+/* line 61, scss/style.scss */
 header h1, header h2, header h3 {
   color: #FFF;
 }
 
-/* line 57, scss/style.scss */
+/* line 64, scss/style.scss */
 ol, ul {
   list-style-type: square;
 }
 
-/* line 59, scss/style.scss */
+/* line 66, scss/style.scss */
 .content {
   background: #FFF;
   padding: 50px;
@@ -7811,13 +8071,13 @@ ol, ul {
 .content:after {
   clear: both;
 }
-/* line 64, scss/style.scss */
+/* line 71, scss/style.scss */
 .content .center {
   display: block;
   margin: 0 auto;
 }
 
-/* line 70, scss/style.scss */
+/* line 77, scss/style.scss */
 aside {
   background: #F5F5F5;
   width: 100%;
@@ -7837,36 +8097,36 @@ aside:before, aside:after {
 aside:after {
   clear: both;
 }
-/* line 74, scss/style.scss */
+/* line 81, scss/style.scss */
 aside .nav {
   float: left;
 }
-/* line 78, scss/style.scss */
+/* line 85, scss/style.scss */
 aside .nav li {
   list-style: none;
   float: left;
   width: 100%;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 85, scss/style.scss */
+  /* line 92, scss/style.scss */
   aside .nav li {
     width: auto;
   }
 }
 
-/* line 91, scss/style.scss */
+/* line 98, scss/style.scss */
 .top-bar a img {
   width: 45px;
   float: left;
 }
 
-/* line 96, scss/style.scss */
+/* line 103, scss/style.scss */
 .menu-icon {
   color: #FFF;
   cursor: pointer;
 }
 
-/* line 101, scss/style.scss */
+/* line 108, scss/style.scss */
 footer {
   width: 100%;
   margin-left: auto;
