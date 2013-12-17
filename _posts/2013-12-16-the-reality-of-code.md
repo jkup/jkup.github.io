@@ -10,15 +10,15 @@ College does many things poorly. Perhaps nothing more poorly than preparing you 
 
 When in school, you learn about all of the building blocks of Computer Science. Variables, Arrays, Classes, Objects, you learn how they work. You use them repeatedly in reduced test cases and maybe you create your own moderately large application.
 
-You are taught what the tools do and how they should be used. You are totally unprepared to see how they are **actually** used. You learn about OOP, S.O.L.I.D principles, unit-testing and all about writing modular code that is easy to maintain.
+You are taught what the tools do and how they should be used. You are totally unprepared to see how they are **actually** used. You learn about OOP, and if you're lucky S.O.L.I.D principles, unit-testing and all about writing modular code that is easy to maintain.
 
 You learn to write and read code that looks like this:
 <pre><code class="language-php">
 class MyClass extends ParentClass {
 
 	//dependency injected constructor
-	public function __construct($emailConnection) {
-		$this->email = $emailConnection;
+	public function __construct(name $name) {
+		$this->name = $name;
 	}
 
 }
