@@ -1,8 +1,7 @@
 ---
 layout: post
+title: Programmer. Speaker. Entrepreneur.
 ---
-
-### Programmer. Speaker. Entrepreneur.
 
 <h4 class="subheader">My name is Jonathan Kuperman. I'm a web developer living in Ann Arbor, Michigan. I like to play with:</h4>
 

@@ -198,8 +198,8 @@ select {
 /* line 200, scss/bower_components/foundation/scss/foundation/components/_grid.scss */
 .row .row {
   width: auto;
-  margin-left: -0.9375rem;
-  margin-right: -0.9375rem;
+  margin-left: 0;
+  margin-right: 0;
   margin-top: 0;
   margin-bottom: 0;
   max-width: none;
@@ -235,8 +235,8 @@ select {
 .column,
 .columns {
   position: relative;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 0;
+  padding-right: 0;
   width: 100%;
   float: left;
 }
@@ -400,8 +400,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0;
+    padding-right: 0;
     float: left;
   }
 
@@ -735,8 +735,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0;
+    padding-right: 0;
     float: left;
   }
 
@@ -1224,8 +1224,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0;
+    padding-right: 0;
     float: left;
   }
 
@@ -1559,8 +1559,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0;
+    padding-right: 0;
     float: left;
   }
 
@@ -1894,8 +1894,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0;
+    padding-right: 0;
     float: left;
   }
 
@@ -2109,7 +2109,7 @@ select {
 /* line 39, scss/bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .content {
   display: none;
-  padding: 0.9375rem;
+  padding: 0;
 }
 /* line 42, scss/bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .content.active {
@@ -5732,7 +5732,7 @@ table tfoot tr td {
 .tabs-content > .content {
   display: none;
   float: left;
-  padding: 0.9375rem 0;
+  padding: 0 0;
 }
 /* line 70, scss/bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs-content > .content.active {
@@ -5740,7 +5740,7 @@ table tfoot tr td {
 }
 /* line 71, scss/bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs-content > .content.contained {
-  padding: 0.9375rem;
+  padding: 0;
 }
 /* line 73, scss/bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs-content.vertical {
@@ -5748,7 +5748,7 @@ table tfoot tr td {
 }
 /* line 75, scss/bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs-content.vertical > .content {
-  padding: 0 0.9375rem;
+  padding: 0 0;
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -7958,48 +7958,66 @@ pre.line-numbers > code {
 }
 
 /* line 5, scss/style.scss */
-body {
-  background-image: url("images/bg.jpg");
-}
-
-/* line 9, scss/style.scss */
 pre {
   margin: 10px 0 20px 0;
   white-space: pre-wrap;
 }
 
-/* line 14, scss/style.scss */
+/* line 9, scss/style.scss */
+ol, ul {
+  list-style-type: square;
+}
+
+/* line 11, scss/style.scss */
+.row {
+  max-width: 100%;
+}
+
+/* line 12, scss/style.scss */
 .tools {
   max-width: 740px;
   min-width: 181px;
   margin: 0 auto;
 }
 
-/* line 20, scss/style.scss */
+/* line 17, scss/style.scss */
 .date {
   float: right;
   font-size: 12px;
   line-height: 37px;
 }
 
-/* line 26, scss/style.scss */
+/* line 22, scss/style.scss */
 textarea {
   min-height: 100px;
 }
 
-/* line 30, scss/style.scss */
-.top-bar .toggle-topbar.menu-icon {
-  top: 20px;
-  width: 50px;
+/* line 26, scss/style.scss */
+.parralax {
+  background-image: url("images/parralax.jpg");
+  background-position: 0 -20px;
+  height: 150px;
+  margin-top: -8px;
+}
+/* line 32, scss/style.scss */
+.parralax h1 {
+  color: #FFF;
+  line-height: 150px;
+  text-align: center;
+}
+/* line 37, scss/style.scss */
+.parralax h1 span {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 10px 50px;
 }
 
-/* line 35, scss/style.scss */
+/* line 45, scss/style.scss */
 .social-icons {
   display: none;
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 37, scss/style.scss */
+  /* line 47, scss/style.scss */
   .social-icons {
     display: block;
     position: absolute;
@@ -8007,134 +8025,83 @@ textarea {
     right: 0;
   }
 }
-/* line 45, scss/style.scss */
-header {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 62.5rem;
-  *zoom: 1;
-  background: #074e68;
-  height: 90px;
+/* line 56, scss/style.scss */
+.header-left {
+  background: #32373b;
+  min-height: 90px;
+  height: 100%;
   position: relative;
 }
-/* line 165, scss/bower_components/foundation/scss/foundation/components/_global.scss */
-header:before, header:after {
-  content: " ";
-  display: table;
-}
-/* line 166, scss/bower_components/foundation/scss/foundation/components/_global.scss */
-header:after {
-  clear: both;
-}
-@media only screen and (min-width: 40.063em) {
-  /* line 45, scss/style.scss */
-  header {
-    padding: 0 100px;
-  }
-}
-/* line 56, scss/style.scss */
-header .subtitle {
-  margin: -15px 0 0 15px;
-  color: #008cba;
-}
-/* line 61, scss/style.scss */
-header h1, header h2, header h3 {
+/* line 62, scss/style.scss */
+.header-left h2 {
+  line-height: 78px;
+  text-indent: 25px;
   color: #FFF;
 }
 
-/* line 64, scss/style.scss */
-ol, ul {
-  list-style-type: square;
-}
-
-/* line 66, scss/style.scss */
+/* line 69, scss/style.scss */
 .content {
   background: #FFF;
   padding: 50px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 62.5rem;
-  *zoom: 1;
 }
-/* line 165, scss/bower_components/foundation/scss/foundation/components/_global.scss */
-.content:before, .content:after {
-  content: " ";
-  display: table;
-}
-/* line 166, scss/bower_components/foundation/scss/foundation/components/_global.scss */
-.content:after {
-  clear: both;
-}
-/* line 71, scss/style.scss */
+/* line 73, scss/style.scss */
 .content .center {
   display: block;
   margin: 0 auto;
 }
 
-/* line 77, scss/style.scss */
-aside {
-  background: #F5F5F5;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 62.5rem;
-  *zoom: 1;
-}
-/* line 165, scss/bower_components/foundation/scss/foundation/components/_global.scss */
-aside:before, aside:after {
-  content: " ";
-  display: table;
-}
-/* line 166, scss/bower_components/foundation/scss/foundation/components/_global.scss */
-aside:after {
-  clear: both;
-}
-/* line 81, scss/style.scss */
-aside .nav {
+/* line 80, scss/style.scss */
+.nav {
   float: left;
 }
-/* line 85, scss/style.scss */
-aside .nav li {
+
+/* line 84, scss/style.scss */
+.nav li {
   list-style: none;
   float: left;
   width: 100%;
 }
+
 @media only screen and (min-width: 40.063em) {
-  /* line 92, scss/style.scss */
-  aside .nav li {
+  /* line 91, scss/style.scss */
+  .nav li {
     width: auto;
   }
 }
-
-/* line 98, scss/style.scss */
-.top-bar a img {
-  width: 45px;
-  float: left;
+/* line 96, scss/style.scss */
+.top-bar, .top-bar-section ul, .top-bar-section li a:not(.button), .top-bar.expanded .title-area {
+  background: #32373b;
+  color: #697078;
 }
 
-/* line 103, scss/style.scss */
-.menu-icon {
-  color: #FFF;
-  cursor: pointer;
+/* line 101, scss/style.scss */
+.top-bar-section li a:not(.button):hover {
+  background: #32373b;
 }
 
-/* line 108, scss/style.scss */
+/* line 105, scss/style.scss */
+.top-bar-section ul li {
+  margin-left: 25px;
+}
+
+/* line 110, scss/style.scss */
+.top-bar .name h1 a {
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 40.063em) {
+  /* line 115, scss/style.scss */
+  .top-bar {
+    height: 90px;
+  }
+
+  /* line 118, scss/style.scss */
+  .top-bar a {
+    line-height: 90px !important;
+  }
+}
+/* line 123, scss/style.scss */
 footer {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 62.5rem;
-  *zoom: 1;
   background: #333;
   color: #FFF;
   height: 45px;
@@ -8142,13 +8109,4 @@ footer {
   text-align: center;
   line-height: 45px;
   margin: 0 auto;
-}
-/* line 165, scss/bower_components/foundation/scss/foundation/components/_global.scss */
-footer:before, footer:after {
-  content: " ";
-  display: table;
-}
-/* line 166, scss/bower_components/foundation/scss/foundation/components/_global.scss */
-footer:after {
-  clear: both;
 }

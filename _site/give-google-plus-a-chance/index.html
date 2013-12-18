@@ -12,74 +12,38 @@
     <link rel="stylesheet" href="../style.css" type="text/css" media="screen">
   </head>
   <body>
-    <header>
-      <a href="/">
-        <h2>Jon Kuperman</h2>
-        <h4 class="subtitle">Personal website, blog and portfolio</h4>
-      </a>
-    </header>
-    <div id="wrapper">
-      <aside>
+    <div class="row">
+      <div class="medium-4 columns header-left">
+        <header>
+          <a href="/"><h2>Jon Kuperman</h2></a>
+        </header>
+      </div>
+      <div class="medium-8 columns header-right">
         <nav class="top-bar" data-topbar>
+        <ul class="title-area">
+            <li class="name"></li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
           <section class="top-bar-section">
             <ul class="nav">
-              <li>
-                <a href="/">
-                  Home
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href="/about.html">
-                  About Me
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href="/resume.html">
-                  Resume
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href="/blog.html">
-                  Blog
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li>
-                <a href="#" data-reveal-id="myModal">
-                  Contact Me
-                </a>
-              </li>
-              <li class="toggle-topbar menu-icon"><a href=""><span>Menu</span></a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about.html">About Me</a></li>
+              <li><a href="/resume.html">Resume</a></li>
+              <li><a href="/blog.html">Blog</a></li>
+              <li><a href="#" data-reveal-id="myModal">Contact Me</a></li>
             </ul>
-            <div class="social-icons">
-              <ul class="right">
-                <a href="https://www.facebook.com/jon.kuperman">
-                   <img src="/images/facebook.png" />
-                </a>
-                <a href="http://www.linkedin.com/pub/jonathan-kuperman/16/77b/b33">
-                   <img src="/images/linkedin.png" />
-                </a>
-                <a href="https://twitter.com/thecodeplanet">
-                   <img src="/images/twitter.png" />
-                </a>
-                <a href="/feed.xml">
-                   <img src="/images/rss.jpg" />
-                </a>
-                <a href="https://github.com/m1ck3y">
-                   <img src="/images/github.png" />
-                </a>
-              </ul>
-            </div>
           </section>
         </nav>
-      </aside>
-      <section>
-        <div class="content">
+      </div>
+    </div>
+    <section>
+      <div class="row">
+	<div class="parralax">
+		<h1><span>Give Google Plus A Chance</span></h1>
+	</div>
+</div>
+<div class="content">
   <div id="post">
-    <h1>Give Google Plus A Chance</h1>
     <p><img src="/images/google_plus.jpg" alt="Give Google+ A Chance" /></p>
 
 <h2>In The Beginning</h2>
@@ -125,30 +89,44 @@
   </div>
 </div>
 
-      </section>
-      <footer class="top-bar">
-        <nav class="top-bar" data-topbar>
-          <section class="top-bar-section">
-            &copy; 2013 Jon Kuperman
+    </section>
+    <footer class="top-bar">
+      <nav class="top-bar" data-topbar>
+        <section class="top-bar-section">
+          <div class="social-icons">
             <ul class="right">
-              <li class="divider"></li>
-              <li><a href="#">&#x25B2; Back to the top</a></li>
+              <a href="https://www.facebook.com/jon.kuperman">
+                 <img src="/images/facebook.png" />
+              </a>
+              <a href="http://www.linkedin.com/pub/jonathan-kuperman/16/77b/b33">
+                 <img src="/images/linkedin.png" />
+              </a>
+              <a href="https://twitter.com/thecodeplanet">
+                 <img src="/images/twitter.png" />
+              </a>
+              <a href="/feed.xml">
+                 <img src="/images/rss.jpg" />
+              </a>
+              <a href="https://github.com/m1ck3y">
+                 <img src="/images/github.png" />
+              </a>
             </ul>
-          </section>
-        </nav>
-      </footer>
-      <div id="myModal" class="reveal-modal" data-reveal>
-        <h2>Send me a message!</h2>
-        <p class="lead">I love talking tech.</p>
-        <form method="POST" action="" id="contact">
-          <input type="text" id="contact_name" name="name" placeholder="Your name..." />
-          <input type="text" id="contact_email" name="name" placeholder="Your email..." />
-          <textarea name="message" id="contact_message" placeholder="Your awesome message!"></textarea>
-          <input class="button" id="submit" type="submit" value="Send" />
-          <div class="input panel callout" style="display:none;"></div>
-        </form>
-        <a class="close-reveal-modal">&#215;</a>
-      </div>
+          </div>
+          &copy; 2013 Jon Kuperman
+        </section>
+      </nav>
+    </footer>
+    <div id="myModal" class="reveal-modal" data-reveal>
+      <h2>Send me a message!</h2>
+      <p class="lead">I love talking tech.</p>
+      <form method="POST" action="" id="contact">
+        <input type="text" id="contact_name" name="name" placeholder="Your name..." />
+        <input type="text" id="contact_email" name="name" placeholder="Your email..." />
+        <textarea name="message" id="contact_message" placeholder="Your awesome message!"></textarea>
+        <input class="button" id="submit" type="submit" value="Send" />
+        <div class="input panel callout" style="display:none;"></div>
+      </form>
+      <a class="close-reveal-modal">&#215;</a>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
