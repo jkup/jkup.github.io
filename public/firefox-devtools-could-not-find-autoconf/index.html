@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>FireFox DevTools could not find autoconf | Jon Kuperman | The personal website and blog of Jon Kuperman.</title>
+
+  
+  <meta name="author" content="Jon Kuperman">
+  
+
+  
+  <meta name="description" content="How to fix autoconf errors when building FireFox devtools">
+  
+
+  
+  
+  <meta name="keywords" content="">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="FireFox DevTools could not find autoconf"/>
+
+  <meta property="og:site_name" content="Jon Kuperman"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Jon Kuperman" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+</head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Jon Kuperman</a>
+    </h1>
+    <p class="site-description">The personal website and blog of Jon Kuperman.</p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/archives">Archives</a></li>
+      
+        <li><a href="/about">About</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>FireFox DevTools could not find autoconf</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/firefox-devtools-could-not-find-autoconf/" rel="bookmark">
+        <time class="entry-date published" datetime="2014-11-03T08:00:00.000Z">
+          2014-11-03
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>Today I decided to build FireFox Devtools using <a href="https://wiki.mozilla.org/DevTools/Hacking" target="_blank" rel="external">this tutorial</a>. When I tried to run the mach build command I got this error:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">fx-team  ./mach build</div><div class="line">/usr/bin/make -f client.mk -s</div><div class="line">Adding client.mk options from :</div><div class="line">    MOZ_OBJDIR=/Applications/MAMP/htdocs/fx-team/obj-x86_64-apple-darwin14.0.0</div><div class="line">    OBJDIR=/Applications/MAMP/htdocs/fx-team/obj-x86_64-apple-darwin14.0.0</div><div class="line">/Applications/MAMP/htdocs/fx-team/client.mk:304: *** Could not find autoconf 2.13.  Stop.</div><div class="line">make: *** [build] Error 2</div><div class="line">0 compiler warnings present.</div></pre></td></tr></table></figure>
+<p>which really boils down to:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">*** Could not find autoconf 2.13.  Stop.</div></pre></td></tr></table></figure>
+<p>You most likely either don’t have autoconf installed or you just have the wrong version. You can check which by running:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">autoconf --version</div></pre></td></tr></table></figure>
+<p>and you’ll either see something like <em>zsh: command not found: autoconf</em> <strong>or</strong> <em>autoconf (GNU Autoconf) 2.69</em></p>
+<p>Either way, you just need to make sure that you only have autoconf 2.13 installed so you can ( assuming you are on a Mac ) run these commands:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">brew rm autoconf</div><div class="line">brew tap homebrew/versions</div><div class="line">brew install autoconf213</div></pre></td></tr></table></figure>
+<p>then try to run mach build again and you should be good to go!</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2016 Jon Kuperman
+    
+  </p>
+</footer>
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-21008844-11', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+  </div>
+</div>
+</body>
+</html>

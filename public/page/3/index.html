@@ -1,0 +1,476 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Page 3 | Jon Kuperman | The personal website and blog of Jon Kuperman.</title>
+
+  
+  <meta name="author" content="Jon Kuperman">
+  
+
+  
+  <meta name="description" content="I love JavaScript. I blog at Codeplanet, make videos at Nodecasts and podcast at The Web Behind.">
+  
+
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  
+
+  <meta property="og:site_name" content="Jon Kuperman"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Jon Kuperman" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+</head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Jon Kuperman</a>
+    </h1>
+    <p class="site-description">The personal website and blog of Jon Kuperman.</p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/archives">Archives</a></li>
+      
+        <li><a href="/about">About</a></li>
+      
+        <li><a href="/speaking">Speaking</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/websockets-a-game-of-give-and-take/"><span>WebSockets, a game of give and take</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/websockets-a-game-of-give-and-take/" rel="bookmark">
+        <time class="entry-date published" datetime="2014-10-26T07:00:00.000Z">
+          2014-10-26
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>Clients polling servers for data is usually wrong. It doesn’t make sense. It’s not how things are done in the real world.</p>
+<p>All updates on the web happen for one of two reasons:</p>
+<ol>
+<li><p><strong>Client-Updates-Server</strong>. The client has done something differently and the server needs to know about it order to make updates. Think scrolling around on Google Maps.</p>
+</li>
+<li><p><strong>Server-Updates-Client</strong>. The server has more up to date information than was originally served to the client and needs to make the client aware. Think stock tickers.</p>
+</li>
+</ol>
+<p>The problem is that we handle both of these situations the same way, forcing the client to poll for updates regularly. This approach works well for <strong>Client-Updates-Server</strong> but there are a few problems for <strong>Server-Updates-Client:</strong></p>
+<ol>
+<li><p>You have to make a choice between polling too frequently and wasting a ton of resources, or not polling frequently enough and having your users look at stale data.</p>
+</li>
+<li><p>You’re always making two requests when only one is needed. When you AJAX out for data you make a request to the server, which checks to see if it has new information and makes a request back. If you could skip the first request, there would simply be <strong>half as many</strong> requests being made.</p>
+</li>
+</ol>
+<h2 id="Enter-WebSockets"><a href="#Enter-WebSockets" class="headerlink" title="Enter WebSockets"></a>Enter WebSockets</h2><p>WebSockets is a technology that allows you ( the server ) to open an interactive tunnel to your users ( the client ). You can check out the <a href="http://tools.ietf.org/html/rfc6455" target="_blank" rel="external">official RFC here</a>, read <a href="https://developer.mozilla.org/en-US/docs/WebSockets" target="_blank" rel="external">the MDN article</a> or just start messing around with <a href="http://socket.io/" target="_blank" rel="external">Socket.io</a> now!</p>
+<p><a href="http://socket.io/" target="_blank" rel="external">Socket.io</a> has been out for a while now but it has mostly been used for projects where the benefits of push are obvious like video games or collaborative apps like <a href="https://trello.com/" target="_blank" rel="external">Trello</a>. I want to talk about it’s use in sites and apps where the benefit of push might be more subtle.</p>
+<h3 id="A-Simple-Check"><a href="#A-Simple-Check" class="headerlink" title="A Simple Check"></a>A Simple Check</h3><p>Next time you’re working on a web app, and you go to do an AJAX call, ask yourself this question:</p>
+<blockquote>
+<p>Is it the client or the server with new information to share?</p>
+</blockquote>
+<p>If the client has new information, go ahead with AJAX business as usual! Otherwise, please consider switching to WebSockets.</p>
+<h2 id="Limitations"><a href="#Limitations" class="headerlink" title="Limitations"></a>Limitations</h2><p>At the time of this writing, WebSocket technology is pretty limited to stacks that are long running processes like Node.js. If you wanted to get WebSockets working with scripting languages like PHP or Ruby, you’ll have to add something like <a href="http://redis.io/" target="_blank" rel="external">Redis</a> for pubsub. Check out <a href="https://github.com/rase-/socket.io-php-emitter" target="_blank" rel="external">this PHP implementation</a> for more information on setting that up.</p>
+<p>The point is, the more we all start using this technology the better the tooling around it will be. So stop pulling when you should be pushing!</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/how-to-install-devtools-themes/"><span>How to install Chrome Devtools themes</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/how-to-install-devtools-themes/" rel="bookmark">
+        <time class="entry-date published" datetime="2014-08-03T07:00:00.000Z">
+          2014-08-03
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>Ever seen a screenshot of someone rocking Chrome with a custom theme for their developer tools?</p>
+<p><img src="/images/devtools-fullscreen.png" alt="Themed Devtools"></p>
+<p>It’s not quite as easy as I hoped it would be, but this short tutorial will show you how to get up and running.</p>
+<h2 id="Step-1-Download-a-Theme"><a href="#Step-1-Download-a-Theme" class="headerlink" title="Step 1 - Download a Theme"></a>Step 1 - Download a Theme</h2><p>Check out <a href="http://devthemez.com/themes/chrome-developer-tools" target="_blank" rel="external">DevThemez</a> and find a theme that looks great for you. Clicking on a theme’s download button will take you to the Chrome Webstore. Click the install link and you’ll have the theme downloaded and installed.</p>
+<h2 id="Step-2-Turn-on-Experiment"><a href="#Step-2-Turn-on-Experiment" class="headerlink" title="Step 2 - Turn on Experiment"></a>Step 2 - Turn on Experiment</h2><p>In your URL bar, type:</p>
+<p><pre>chrome://flags/</pre><br>Scroll down to the experiment titled ‘Enable Developer Tools experiemnt’ and enable it.</p>
+<p><img src="/images/experiment-screenshot.png" alt="Themed Devtools"></p>
+<h2 id="Step-3-Reload-Chrome"><a href="#Step-3-Reload-Chrome" class="headerlink" title="Step 3 - Reload Chrome"></a>Step 3 - Reload Chrome</h2><h2 id="Step-4-Allow-Custom-Themes"><a href="#Step-4-Allow-Custom-Themes" class="headerlink" title="Step 4 - Allow Custom Themes"></a>Step 4 - Allow Custom Themes</h2><p>Open Developer Tools and click the settings cog in the top right corner.</p>
+<p><img src="/images/devtools-settings.png" alt="Themed Devtools"></p>
+<p>Select ‘Experiments’ from the left sidebar. Scroll to the bottom and select ‘Allow custom UI themes’.</p>
+<h2 id="Step-5-Restart-Devtools"><a href="#Step-5-Restart-Devtools" class="headerlink" title="Step 5 - Restart Devtools"></a>Step 5 - Restart Devtools</h2><p>( close and open them again )</p>
+<p>You should be good to go!</p>
+<p>Enjoy!</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/transpiled-javascript-performance/"><span>Transpiled JavaScript Performance</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/transpiled-javascript-performance/" rel="bookmark">
+        <time class="entry-date published" datetime="2014-07-25T07:00:00.000Z">
+          2014-07-25
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>A really interesting discussion <em>almost</em> happened between <a href="https://twitter.com/getify" target="_blank" rel="external">Kyle Simpson</a> and <a href="https://twitter.com/jdalton" target="_blank" rel="external">John-David Dalton</a> at <a href="http://forwardjs.com/" target="_blank" rel="external">Forward JS</a>.</p>
+<p>John mentioned that most browsers deoptimize your functions if they contain a try-catch. Kyle had mentioned earlier that catch blocks are the only way to have block scope in JS and so transpilers like Google’s Traceur use them to backport ES6’s <em>let</em> keyword.</p>
+<p>So that begs the question</p>
+<blockquote>Is Google turning your code into something it refuses to optimize?</blockquote>
+
+<h2 id="ES6-Block-Scope"><a href="#ES6-Block-Scope" class="headerlink" title="ES6 Block Scope"></a>ES6 Block Scope</h2><p>Coming with ECMAScript 6, you’ll be able to get block scope like this:</p>
+<pre><code class="language-javascript">{
+    let a = 2;
+    console.log(a); // 2
+}
+
+console.log(a); // undefined
+</code></pre>
+
+<h2 id="Block-Scope-with-Traceur"><a href="#Block-Scope-with-Traceur" class="headerlink" title="Block Scope with Traceur"></a>Block Scope with Traceur</h2><p>Traceur allows you to use this block scoping technique today by turning your code into try-catch blocks under the hood.</p>
+<p>Check out the <a href="https://google.github.io/traceur-compiler/demo/repl.html" target="_blank" rel="external">Traceur Transcoding Demo</a> for yourself! Just remember to turn on the option for experimental.</p>
+<p>If you try the code shown above, you’ll see this result in the right pane.</p>
+<p><img src="/images/traceur_demo.png" alt="Traceur try-catch"></p>
+<h2 id="JS-Perf-with-Try-Catch"><a href="#JS-Perf-with-Try-Catch" class="headerlink" title="JS Perf with Try-Catch"></a>JS Perf with Try-Catch</h2><p>The second piece of this puzzle comes to us from Kevin Gadd in the form of a JS Perf.</p>
+<p><a href="http://jsperf.com/try-block-deoptimization" target="_blank" rel="external">On this page</a> you can plainly see that adding a try-catch reduces operations per second from 90K to 20K in a simple add example.</p>
+<h2 id="Is-There-Something-We’re-Missing"><a href="#Is-There-Something-We’re-Missing" class="headerlink" title="Is There Something We’re Missing?"></a>Is There Something We’re Missing?</h2><p>Perhaps something else is happening behind the scenes?</p>
+<p>It seems as though Traceur’s compilation of this feature can really wreak havok on the performance of your code.</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/modern-password-management/"><span>Modern Password Management</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/modern-password-management/" rel="bookmark">
+        <time class="entry-date published" datetime="2014-06-01T07:00:00.000Z">
+          2014-06-01
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>There have been more than a few security scares going around the internet lately.</p>
+<p><img src="/images/heartbleed.jpg" alt="Heartbleed Logo"></p>
+<p>Whether you’ve been keeping up with the news, or not, you need to be sure that you are using strong passwords for your various online accounts.</p>
+<h2 id="Things-to-consider"><a href="#Things-to-consider" class="headerlink" title="Things to consider"></a>Things to consider</h2><p>When selecting a password there are a few things you need to consider.</p>
+<ul>
+<li>Entropy</li>
+<li>Attack Methods</li>
+<li>Password Variety</li>
+</ul>
+<p>Let’s take a look at each of these.</p>
+<h2 id="Entropy"><a href="#Entropy" class="headerlink" title="Entropy"></a>Entropy</h2><p>Simply put, <em>password entropy</em> is a term for how difficult to guess a password is. There are really two schools of thought on creating a difficult to guess password.</p>
+<ul>
+<li>Length - <a href="https://xkcd.com/936/" target="_blank">correcthorsebatterystaple</a></li>
+<li>Randomness - 2<em>mWX3XWL9pZAfMh4p6</em>wK3J]%c]=</li>
+</ul>
+<p>Understanding these two schools of thoughts ultimately boils down to understanding potential attack methods.</p>
+<h2 id="Attack-Methods"><a href="#Attack-Methods" class="headerlink" title="Attack Methods"></a>Attack Methods</h2><p>There are really two password attacks you should be considering when choosing a password.</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Brute-force_attack" target="_blank" rel="external">Brute-force</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dictionary_attack" target="_blank" rel="external">Dictionary</a></li>
+</ul>
+<h3 id="Brute-Force-Attacks"><a href="#Brute-Force-Attacks" class="headerlink" title="Brute-Force Attacks"></a>Brute-Force Attacks</h3><p>One of the most common methods for cracking passwords, the basic idea is to try every possible letter number combination until eventually getting it correct. As you might imagine, randomness doesn’t help make your password harder to brute-force. But before you start piling words together, let’s check out the next type of attack.</p>
+<h3 id="Dictionary-Attack"><a href="#Dictionary-Attack" class="headerlink" title="Dictionary Attack"></a>Dictionary Attack</h3><p>As you may imagine from it’s name, this type of attack uses a dictionary ( or word list ) to attempt password cracking. Very different from the brute-force attack, this one renders your long string of words password ultimately useless.</p>
+<h2 id="Password-Variety"><a href="#Password-Variety" class="headerlink" title="Password Variety"></a>Password Variety</h2><p>Just as an aside, using multiple passwords for different accounts means that even if one is breached, the attacker won’t have your password for everything. Far too often attackers target unimportant services with relatively weak security and then use your username / password combination to go after your email, bank, and other important accounts.</p>
+<h1 id="Managing-It-All"><a href="#Managing-It-All" class="headerlink" title="Managing It All"></a>Managing It All</h1><p>Now that you want to have many different passwords that are both long and full of random characters, you’ll need some type of software to manage it all.</p>
+<p><img src="/images/1password.png" alt="1Password Logo"></p>
+<p>Personally, I use <a href="https://agilebits.com/onepassword" target="_blank" rel="external">1 Password from AgileBits</a> to manage mine, but you can use <a href="https://lastpass.com/" target="_blank" rel="external">Lastpass</a> or whatever else you’d like. Whatever you choose should be able to do a few basic tasks.</p>
+<ul>
+<li>Generate high entropy passwords</li>
+<li>Manage all of your passwords</li>
+<li>Sync between devices ( computers and mobile )</li>
+</ul>
+<p>I think that all of the passwords I create fall into one of the following three categories.</p>
+<ol>
+<li>Low-priority website that needs to be accessed from multiple devices.</li>
+<li>High-priority website that only needs to be accessed from your main device.</li>
+<li>High-priority website that needs to be accessed from multiple devices.</li>
+</ol>
+<h3 id="Low-priority-multiple-device"><a href="#Low-priority-multiple-device" class="headerlink" title="Low-priority / multiple device"></a>Low-priority / multiple device</h3><p>For most of these websites, I create an easy to remember combination of letters and numbers and just commit it to memory. Sometimes I don’t even both to save these in 1Password.</p>
+<h3 id="High-priority-single-device"><a href="#High-priority-single-device" class="headerlink" title="High-priority / single device"></a>High-priority / single device</h3><p>These are also very easy. I use 1Password to generate a 30 character string comprised of letters, numbers and symbols and save it in the app.</p>
+<h3 id="High-priority-multiple-devices"><a href="#High-priority-multiple-devices" class="headerlink" title="High-priority / multiple devices"></a>High-priority / multiple devices</h3><p>This is also fairly simple to do with an app like 1Password. I generate 30 character strings and then sync my passwords between the mobile app and the desktop app on multiple devices. Honestly, after I had to set up syncing on all my devices I began generating high entropy passwords even for lower stakes sites.</p>
+<h2 id="A-Word-of-Warning"><a href="#A-Word-of-Warning" class="headerlink" title="A Word of Warning"></a>A Word of Warning</h2><p>The basic idea with these password managers is always the same. They are apps on your computers locked behind a single password – or a <em>single point of failure</em>. This means that if someone got access to your computer and cracked your 1Password password they would have all of the rest of your passwords in plain text.</p>
+<p>Personally, I think it’s the best option out there - and there are security measures you can take to make your system more secure, but I just thought you should all be aware of the potential shortcomings!</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/the-reality-of-code/"><span>The Reality of Code</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/the-reality-of-code/" rel="bookmark">
+        <time class="entry-date published" datetime="2013-12-16T08:00:00.000Z">
+          2013-12-16
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>College does many things poorly. Perhaps nothing more poorly than preparing you for what code looks like in the <em>wild</em>.</p>
+<p>###Academia</p>
+<p>When in school, you learn about all of the building blocks of Computer Science. Variables, Arrays, Classes, Objects, you learn how they work. You use them repeatedly in reduced test cases and maybe you create your own moderately large application.</p>
+<p>You are taught what the tools do and how they should be used. You are totally unprepared to see how they are <strong>actually</strong> used. You learn about OOP, and if you’re lucky S.O.L.I.D principles, unit-testing and all about writing modular code that is easy to maintain.</p>
+<p>You learn to write and read code that looks like this:</p>
+<pre><code class="language-php">
+class MyClass extends ParentClass {
+
+    //dependency injected constructor
+    public function __construct(name $name) {
+        $this->name = $name;
+    }
+
+}
+</code></pre>
+
+<p>But then, you get your first job.</p>
+<p>###The Sad Reality</p>
+<p>Now, there is a slight chance, depending on your area, language of choice and the specific company you end up working for, that this won’t happen to you. However it is my prediction that most of you will end up staring at something similar to this:</p>
+<pre><code class="language-php">
+}
+
+//line 489 of a 2500 line file, loose file with functions strewn everywhere
+
+//no namespaces, mystery meat parameters
+function product_db_connector_array_merge_tool($id, $start, $end, $range, $topVar, $date, $apex) {
+    require('db/tools/mysql/someconstants.php');
+    require('db/helpers/mysql/otherconstants.php');
+    require('db/helpers/fixed.php'); //what does this even do?
+
+    //where are these variables even coming from?
+    if($array_data_recursive_output['lastDate'] == $data_array_flush)
+        return false;
+}
+
+//here we go again...
+function product_db_connector_array_merge_helper($newId, $start, $range, $topVar, $date, $apex) {
+
+</code></pre>
+
+<p>It’s kind of like starting over. You learned all of these best practices, now you’ll have to learn what 10 years of business decisions and compromise look like. You’ll need a new toolkit to brace this type of project. You’ll need to be able to use tools like <a href="http://beyondgrep.com/" target="_blank" rel="external">Ack</a> to search through a big codebase quickly and <a href="http://git-scm.com/" target="_blank" rel="external">git</a> to provide some commit context to specific code descisions that may make little to no sense.</p>
+<p>###The Takeaway</p>
+<p>It is super important to learn how to work with codebases like this as this is what many companies have to work with and you ( most likely ) need a job. However, it is also important that you don’t forget where you came from. Keep striving towards that ideal and try to leave everyday knowing you brought the code one step closer to meeting it.</p>
+<p>###There is Hope</p>
+<p>Also keep in mind that many people have successfully conquered tech debt and behemoth codebases and come out the other side. Here are a few resources as you come to grips with the reality of code.</p>
+<ul>
+<li><a href="http://mikehadlow.blogspot.co.uk/2013/12/are-your-programmers-working-hard-or.html" target="_blank" rel="external">Are Your Programmers Working Hard, Or Are They Lazy?</a></li>
+<li><a href="http://paul-m-jones.com/archives/2667" target="_blank" rel="external">It Was Like That When I Got Here: Steps Toward Modernizing a Legacy Codebase</a></li>
+</ul>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+
+<nav class="pagination">
+  
+  <a href="/page/2/" class="pagination-prev">Prev</a>
+  
+  
+  <a href="/page/4/" class="pagination-next">Next</a>
+  
+</nav>
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2016 Jon Kuperman
+    
+  </p>
+</footer>
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-21008844-11', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+  </div>
+</div>
+</body>
+</html>
