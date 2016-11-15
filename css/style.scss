@@ -501,9 +501,7 @@ a {
 }
 
 li {
-  height: 30px;
-  display: inline-block;
-  width: 100%;
+  margin-bottom: 25px;
 }
 
 p {
@@ -618,7 +616,7 @@ blockquote {
   }
 }
 
-.scala {
+.safe {
   color: #C71E14;
   border-bottom: 2px solid #333333;
 
