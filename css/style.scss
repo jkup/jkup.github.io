@@ -471,7 +471,7 @@ li,
 blockquote {
   color: #333333;
   font-family: 'Slabo 27px', serif;
-  font-size: 20px;
+  font-size: calc(15px + 7 * ((100vw - 500px) / 900));
 }
 
 h1, h2, h3, h4, h5 {
@@ -535,6 +535,10 @@ blockquote {
   padding: 0 20px;
 }
 
+.course-image {
+  border: 5px solid #fff3e4;
+}
+
 .twitter {
   color: #1da1f2;
   border-bottom: 2px solid #333333;
@@ -545,8 +549,7 @@ blockquote {
   }
 }
 
-.github,
-.ama {
+.github {
   color: #60b044;
   border-bottom: 2px solid #333333;
 
@@ -556,17 +559,7 @@ blockquote {
   }
 }
 
-.brave {
-  color: #ff5000;
-  border-bottom: 2px solid #333333;
-
-  &:hover {
-    color: #333333;
-    border-bottom: 2px solid #ff5000;
-  }
-}
-
-.frontendmasters {
+.ama {
   color: #d5342f;
   border-bottom: 2px solid #333333;
 
