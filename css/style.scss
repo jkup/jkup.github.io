@@ -535,8 +535,24 @@ blockquote {
   padding: 0 20px;
 }
 
-.course-image {
-  border: 5px solid #fff3e4;
+.accessibility {
+  color: #4D6897;
+  border-bottom: 2px solid #333333;
+
+  &:hover {
+    color: #333333;
+    border-bottom: 2px solid #4D6897;
+  }
+}
+
+.devtools {
+  color: #009D61;
+  border-bottom: 2px solid #333333;
+
+  &:hover {
+    color: #333333;
+    border-bottom: 2px solid #009D61;
+  }
 }
 
 .twitter {
