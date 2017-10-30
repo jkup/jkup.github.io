@@ -24,9 +24,7 @@ github_username:  jkup
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
-  - jekyll-offline
+plugins: ['jekyll-feed', 'jekyll-offline']
 exclude:
   - Gemfile
   - Gemfile.lock
