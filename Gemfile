@@ -17,6 +17,6 @@ gem "jekyll", "3.6.2"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "jekyll-feed"
-   gem 'jekyll-offline', :git => 'git://github.com/jeremiak/jekyll-offline.git'
+  gem "jekyll-feed"
+  gem 'jekyll-offline', :git => 'git://github.com/jeremiak/jekyll-offline.git'
 end
