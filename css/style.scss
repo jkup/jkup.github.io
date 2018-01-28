@@ -64,7 +64,8 @@ h1 {
 
 figcaption,
 figure,
-main { /* 1 */
+main {
+  /* 1 */
   display: block;
 }
 
@@ -269,7 +270,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -279,7 +281,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -470,15 +473,20 @@ p,
 li,
 blockquote {
   color: #333333;
-  font-family: 'Slabo 27px', serif;
-  font-size: calc(15px + 7 * ((100vw - 500px) / 900));
+  font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Arvo", cursive;
   font-weight: 700;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 40px;
   margin-left: -2.5px;
   line-height: 1.04;
@@ -505,11 +513,9 @@ li {
 }
 
 p {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 21px;
-  line-height: 1.58;
-  letter-spacing: -.003em;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
 }
 
 img {
@@ -536,22 +542,22 @@ blockquote {
 }
 
 .accessibility {
-  color: #4D6897;
+  color: #4d6897;
   border-bottom: 2px solid #333333;
 
   &:hover {
     color: #333333;
-    border-bottom: 2px solid #4D6897;
+    border-bottom: 2px solid #4d6897;
   }
 }
 
 .devtools {
-  color: #009D61;
+  color: #009d61;
   border-bottom: 2px solid #333333;
 
   &:hover {
     color: #333333;
-    border-bottom: 2px solid #009D61;
+    border-bottom: 2px solid #009d61;
   }
 }
 
@@ -586,16 +592,16 @@ blockquote {
 }
 
 .nodecasts {
-  color: #21ABC7;
+  color: #21abc7;
   border-bottom: 2px solid #333333;
 
   &:hover {
     color: #333333;
-    border-bottom: 2px solid #21ABC7;
+    border-bottom: 2px solid #21abc7;
   }
 }
 
-.codeplanet,
+.medium,
 .stuck {
   color: #2ea3f2;
   border-bottom: 2px solid #333333;
@@ -607,45 +613,45 @@ blockquote {
 }
 
 .php {
-  color: #6183B9;
+  color: #6183b9;
   border-bottom: 2px solid #333333;
 
   &:hover {
     color: #333333;
-    border-bottom: 2px solid #6183B9;
+    border-bottom: 2px solid #6183b9;
   }
 }
 
 .javascript {
-  color: #DCC42E;
+  color: #dcc42e;
   border-bottom: 2px solid #333333;
 
   &:hover {
     color: #333333;
-    border-bottom: 2px solid #DCC42E;
+    border-bottom: 2px solid #dcc42e;
   }
 }
 
 .safe {
-  color: #C71E14;
+  color: #c71e14;
   border-bottom: 2px solid #333333;
 
   &:hover {
     color: #333333;
-    border-bottom: 2px solid #C71E14;
+    border-bottom: 2px solid #c71e14;
   }
 }
 
 .backButton {
-    margin: 25px 0;
-    display: inline-block;
-    font-size: 20px;
-    color: #333;
-    border-bottom: 2px solid #1da1f2;
-    padding: 5px 0;
+  margin: 25px 0;
+  display: inline-block;
+  font-size: 20px;
+  color: #333;
+  border-bottom: 2px solid #1da1f2;
+  padding: 5px 0;
 
-    &:hover {
-      color: #1da1f2;
-      border-bottom: 2px solid #333;
-    }
+  &:hover {
+    color: #1da1f2;
+    border-bottom: 2px solid #333;
+  }
 }

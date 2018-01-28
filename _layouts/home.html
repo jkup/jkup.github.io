@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="theme-color" content="#1da1f2">
-    <title>Jon Kuperman's Personal Blog</title>
+    <title>Jon Kuperman's Personal Site</title>
 
-    <link rel="manifest" href="/manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <meta name="description" content="The personal website and blog of Jon Kuperman">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,41 +15,28 @@
 
 <body>
     <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
 
     <div class="container">
-        <p>Hello.</p>
+        <h1>Hello.</h1>
         <p>My name is Jon Kuperman. I'm a developer, teacher and open source evangelist.
             <br />You can follow me on
             <a target="_blank" class="twitter" href="https://twitter.com/jkup">Twitter</a> and
-            <a target="_blank" class="github" href="https://github.com/jkup">Github</a>.</p>
+            <a target="_blank" class="github" href="https://github.com/jkup">Github</a>.
+        </p>
         <p>You should check out my
+            <a target="_blank" class="medium" href="https://medium.com/@jkup">Medium Blog</a>,
             <a target="_blank" class="ama" href="https://github.com/jkup/ama">Ask Me Anything</a>,
-            <a target="_blank" class="nodecasts" href="https://nodecasts.io/">Interactive Node.js Tutorials</a> or my
-            <a target="_blank" class="codeplanet" href="https://codeplanet.io/">Programming Blog</a>.</p>
-
-        <p>Also, check out my courses on Frontend Masters!</p>
-
+            <a target="_blank" class="nodecasts" href="https://nodecasts.io/">Interactive Node.js Tutorials</a>
+        </p>
+        <p>Also, check out my courses on Frontend Masters:</p>
         <p>
             <a target="_blank" class="accessibility" href="https://frontendmasters.com/courses/web-accessibility/">Web Accessibility</a>
             <span>&amp;</span>
             <a target="_blank" class="devtools" href="https://frontendmasters.com/courses/chrome-dev-tools/">Chrome Developer Tools</a>
         </p>
-
-        <p>Some things I've written</p>
-
-        <ul>
-            {% for post in site.posts %}
-            <li>
-                <small>{{ post.date | date: "%Y-%m-%d" }}</small> -
-                <a class="{{ post.className}}" href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-            {% endfor %}
-        </ul>
     </div>
-
-    {% register_service_worker %}
 
     <!-- Google Analytics -->
     <script>
