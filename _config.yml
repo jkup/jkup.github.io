@@ -20,11 +20,23 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jonkuperman.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jkup
-github_username:  jkup
+github_username: jkup
 
 # Build settings
 markdown: kramdown
-plugins: ['jekyll-feed']
+plugins: ["jekyll-feed", "jekyll-pwa-plugin"]
 exclude:
   - Gemfile
   - Gemfile.lock
+pwa:
+  sw_src_filepath: service-worker.js # Optional
+  sw_dest_filename: service-worker.js # Optional
+  dest_js_directory: assets/js # Required
+  precache_recent_posts_num: 5 # Optional
+  precache_glob_directory: / # Optional
+  precache_glob_patterns: # Optional
+    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
+    - index.html
+  precache_glob_ignores: # Optional
+    - sw-register.js
+    - "fonts/**/*"
