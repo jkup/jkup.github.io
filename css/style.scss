@@ -568,32 +568,32 @@ code {
 }
 
 .devtools {
-  color: #009d61;
+  color: #136317;
   border-bottom: 2px solid #333333;
 
   &:hover {
     color: #333333;
-    border-bottom: 2px solid #009d61;
+    border-bottom: 2px solid #136317;
   }
 }
 
 .twitter {
-  color: #1da1f2;
+  color: #673ab7;
   border-bottom: 2px solid #333333;
 
   &:hover {
     color: #333333;
-    border-bottom: 2px solid #1da1f2;
+    border-bottom: 2px solid #673ab7;
   }
 }
 
 .github {
-  color: #60b044;
+  color: #136317;
   border-bottom: 2px solid #333333;
 
   &:hover {
     color: #333333;
-    border-bottom: 2px solid #60b044;
+    border-bottom: 2px solid #136317;
   }
 }
 
@@ -608,53 +608,23 @@ code {
 }
 
 .nodecasts {
-  color: #21abc7;
+  color: #13578e;
   border-bottom: 2px solid #333333;
 
   &:hover {
     color: #333333;
-    border-bottom: 2px solid #21abc7;
+    border-bottom: 2px solid #13578e;
   }
 }
 
 .medium,
 .stuck {
-  color: #2ea3f2;
+  color: #136317;
   border-bottom: 2px solid #333333;
 
   &:hover {
     color: #333333;
-    border-bottom: 2px solid #2ea3f2;
-  }
-}
-
-.php {
-  color: #6183b9;
-  border-bottom: 2px solid #333333;
-
-  &:hover {
-    color: #333333;
-    border-bottom: 2px solid #6183b9;
-  }
-}
-
-.javascript {
-  color: #dcc42e;
-  border-bottom: 2px solid #333333;
-
-  &:hover {
-    color: #333333;
-    border-bottom: 2px solid #dcc42e;
-  }
-}
-
-.safe {
-  color: #c71e14;
-  border-bottom: 2px solid #333333;
-
-  &:hover {
-    color: #333333;
-    border-bottom: 2px solid #c71e14;
+    border-bottom: 2px solid #136317;
   }
 }
 
@@ -663,11 +633,11 @@ code {
   display: inline-block;
   font-size: 20px;
   color: #333;
-  border-bottom: 2px solid #1da1f2;
+  border-bottom: 2px solid #673ab7;
   padding: 5px 0;
 
   &:hover {
-    color: #1da1f2;
+    color: #673ab7;
     border-bottom: 2px solid #333;
   }
 }
