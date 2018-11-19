@@ -21,15 +21,15 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "2018/11/18/adding-service-worker-jekyll-github-page.html",
-    "revision": "d59ebbe7fe45d76d6c5920306b6dde17"
+    "revision": "dffa3ef42b7321015e8def842a02e72f"
   },
   {
     "url": "2018/11/18/content-is-not-sized-correctly-for-the-viewport.html",
-    "revision": "135814d086d290eaf6a158a4b07715ff"
+    "revision": "01a4c07a733f07e7bcf08db3fc468a21"
   },
   {
     "url": "2018/11/18/getting-started-with-asts.html",
-    "revision": "5763f6c12fcb003375677d7753dd338f"
+    "revision": "034633233ed86ca6f04c4eb849f11ad9"
   },
   {
     "url": "css/style.css",
@@ -89,7 +89,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "f4369d92fa543be64831382b258d572b"
+    "revision": "a5a8a064ab6407fa912033f67ae68f46"
   },
   {
     "url": "js/prism.js",
