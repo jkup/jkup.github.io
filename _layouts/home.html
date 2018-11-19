@@ -1,52 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="theme-color" content="#1da1f2">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="theme-color" content="#1da1f2" />
     <title>Jon Kuperman's Personal Site</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <meta name="description" content="The personal website and blog of Jon Kuperman">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta
+      name="description"
+      content="The personal website and blog of Jon Kuperman"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<body>
+  <body>
     <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
     <![endif]-->
 
     <div class="container">
-        <h1>Hello.</h1>
-        <p>My name is Jon Kuperman. I'm a developer, teacher and open source evangelist.
-            <br />You can follow me on
-            <a target="_blank" class="twitter" href="https://twitter.com/jkup">Twitter</a> and
-            <a target="_blank" class="github" href="https://github.com/jkup">Github</a>.
-        </p>
-        <p>You should check out my
-            <a target="_blank" class="medium" href="https://medium.com/@jkup">Medium Blog</a>
-            <span>, </span>
-            <a target="_blank" class="ama" href="https://github.com/jkup/ama">Ask Me Anything</a>
-            <span>, </span>
-            <span> or my </span>
-            <a target="_blank" class="nodecasts" href="https://www.youtube.com/channel/UCwXMtRJvXLKGHZhPUHNV72Q">YouTube Channel</a>
-        </p>
-        <p>Also, check out my courses on Frontend Masters:</p>
-        <p>
-            <a target="_blank" class="accessibility" href="https://frontendmasters.com/courses/web-accessibility/">Web Accessibility</a>
-            <span>&amp;</span>
-            <a target="_blank" class="devtools" href="https://frontendmasters.com/courses/chrome-dev-tools/">Chrome Developer Tools</a>
-        </p>
+      <h1>Hello.</h1>
+      <p>
+        My name is Jon Kuperman. I'm a developer, teacher and open source
+        evangelist. <br />You can follow me on
+        <a target="_blank" class="twitter" href="https://twitter.com/jkup"
+          >Twitter</a
+        >
+        and
+        <a target="_blank" class="github" href="https://github.com/jkup"
+          >Github</a
+        >.
+      </p>
+      <p>
+        You should check out my
+        <a target="_blank" class="medium" href="https://medium.com/@jkup"
+          >Medium Blog</a
+        >
+        <span>, </span>
+        <a target="_blank" class="ama" href="https://github.com/jkup/ama"
+          >Ask Me Anything</a
+        >
+        <span>, </span> <span> or my </span>
+        <a
+          target="_blank"
+          class="nodecasts"
+          href="https://www.youtube.com/channel/UCwXMtRJvXLKGHZhPUHNV72Q"
+          >YouTube Channel</a
+        >
+      </p>
+      <p>Also, check out my courses on Frontend Masters:</p>
+      <p>
+        <a
+          target="_blank"
+          class="accessibility"
+          href="https://frontendmasters.com/courses/web-accessibility/"
+          >Web Accessibility</a
+        >
+        <span>&amp;</span>
+        <a
+          target="_blank"
+          class="devtools"
+          href="https://frontendmasters.com/courses/chrome-dev-tools/"
+          >Chrome Developer Tools</a
+        >
+      </p>
+
+      <h2>Some Things I've written:</h2>
+      <ul class="posts">
+        {% for post in site.posts %}
+        <li>
+          <span class="post-date"> {{ post.date | date: "%m/%d/%Y" }} </span
+          ><a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
 
     <!-- Google Analytics -->
     <script>
-        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-        ga('create', 'UA-21008844-11', 'auto'); ga('send', 'pageview')
+      window.ga = function() {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-21008844-11", "auto");
+      ga("send", "pageview");
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-</body>
-
+    <script
+      src="https://www.google-analytics.com/analytics.js"
+      async
+      defer
+    ></script>
+  </body>
 </html>

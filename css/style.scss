@@ -485,9 +485,14 @@ h5 {
   font-weight: 700;
 }
 
-h1,
-h2 {
+h1 {
   font-size: 40px;
+  margin-left: -2.5px;
+  line-height: 1.04;
+}
+
+h2 {
+  font-size: 32px;
   margin-left: -2.5px;
   line-height: 1.04;
 }
@@ -535,10 +540,21 @@ blockquote {
   }
 }
 
+code {
+  color: #fff;
+  background: #333;
+  padding: 25px;
+  display: block;
+}
+
 .container {
   max-width: 700px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.posts {
+  margin-top: 50px;
 }
 
 .accessibility {
