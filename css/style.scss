@@ -545,6 +545,7 @@ code {
   background: #333;
   padding: 25px;
   display: block;
+  margin-top: 25px;
 }
 
 .container {
@@ -640,4 +641,8 @@ code {
     color: #673ab7;
     border-bottom: 2px solid #333;
   }
+}
+
+.twitter-tweet {
+  margin: 50px auto !important;
 }
