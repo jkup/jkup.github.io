@@ -20,6 +20,10 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
  */
 self.__precacheManifest = [
   {
+    "url": "2018/11/18/adding-service-worker-jekyll-github-page.html",
+    "revision": "6a234364ab54a64abb293e8e6dc51575"
+  },
+  {
     "url": "2018/11/18/content-is-not-sized-correctly-for-the-viewport.html",
     "revision": "b8296e61e61b180e1b4f7606c332d27a"
   },
@@ -49,7 +53,7 @@ self.__precacheManifest = [
   },
   {
     "url": "feed.xml",
-    "revision": "a4e7f5bdfb297a383c7e6e513abdb5a8"
+    "revision": "b89be07252cc31a43ba654827711977a"
   },
   {
     "url": "google115b0b3efae5b385.html",
@@ -89,7 +93,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "4a2eab3f48167712ece3bdaea38f88bf"
+    "revision": "54cf7a14101607c4f1b9db5efe641368"
   },
   {
     "url": "manifest.json",
@@ -97,7 +101,7 @@ self.__precacheManifest = [
   },
   {
     "url": "workbox-config.js",
-    "revision": "5a236654f477f68ae3829b7f219715db"
+    "revision": "18d6f31327ba86278382838fd05d04e2"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
