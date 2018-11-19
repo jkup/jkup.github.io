@@ -3,7 +3,7 @@
   "short_name": "jkup's blog",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
-  "display": "browser",
+  "display": "minimal-ui",
   "Scope": "/",
   "start_url": "/",
   "icons": [
