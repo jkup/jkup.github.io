@@ -19,7 +19,6 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.11.0)
       jekyll (~> 3.3)
-    jekyll-pwa-plugin (2.2.1)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-watch (1.5.1)
@@ -52,7 +51,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.6.3)
   jekyll-feed
-  jekyll-pwa-plugin
 
 RUBY VERSION
    ruby 2.4.2p198
