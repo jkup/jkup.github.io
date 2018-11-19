@@ -52,10 +52,6 @@ self.__precacheManifest = [
     "revision": "b4edcd8aecd2b771aec9a39cb032f740"
   },
   {
-    "url": "feed.xml",
-    "revision": "b89be07252cc31a43ba654827711977a"
-  },
-  {
     "url": "google115b0b3efae5b385.html",
     "revision": "4be3d71ff251a338c77a1e0d2e263e53"
   },
@@ -98,6 +94,10 @@ self.__precacheManifest = [
   {
     "url": "manifest.json",
     "revision": "cf78eefd76455d552c13a40594d9476c"
+  },
+  {
+    "url": "sitemap.xml",
+    "revision": "91c876357aaeaf4a2b5238cdbe821c7e"
   },
   {
     "url": "workbox-config.js",
