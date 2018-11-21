@@ -509,8 +509,15 @@ h4 {
   line-height: 1.22;
 }
 
-a {
+a,
+a:visited {
+  color: #007bff;
   text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
 }
 
 li {
@@ -520,10 +527,11 @@ li {
 p {
   font-size: 18px;
   line-height: 1.5;
-  margin: 0 0 1rem 0;
+  margin: 38px 0;
 }
 
 img {
+  margin-top: 43px;
   max-width: 100%;
 }
 
@@ -550,9 +558,10 @@ blockquote {
   margin-top: 50px;
 }
 
-.accessibility {
+a.accessibility {
   color: #4d6897;
   border-bottom: 2px solid #333333;
+  text-decoration: none;
 
   &:hover {
     color: #333333;
@@ -560,9 +569,10 @@ blockquote {
   }
 }
 
-.devtools {
+a.devtools {
   color: #136317;
   border-bottom: 2px solid #333333;
+  text-decoration: none;
 
   &:hover {
     color: #333333;
@@ -570,9 +580,10 @@ blockquote {
   }
 }
 
-.twitter {
+a.twitter {
   color: #673ab7;
   border-bottom: 2px solid #333333;
+  text-decoration: none;
 
   &:hover {
     color: #333333;
@@ -580,9 +591,10 @@ blockquote {
   }
 }
 
-.github {
+a.github {
   color: #136317;
   border-bottom: 2px solid #333333;
+  text-decoration: none;
 
   &:hover {
     color: #333333;
@@ -590,9 +602,10 @@ blockquote {
   }
 }
 
-.ama {
+a.ama {
   color: #d5342f;
   border-bottom: 2px solid #333333;
+  text-decoration: none;
 
   &:hover {
     color: #333333;
@@ -600,9 +613,10 @@ blockquote {
   }
 }
 
-.nodecasts {
+a.nodecasts {
   color: #13578e;
   border-bottom: 2px solid #333333;
+  text-decoration: none;
 
   &:hover {
     color: #333333;
@@ -610,10 +624,11 @@ blockquote {
   }
 }
 
-.medium,
-.stuck {
+a.medium,
+a.stuck {
   color: #136317;
   border-bottom: 2px solid #333333;
+  text-decoration: none;
 
   &:hover {
     color: #333333;

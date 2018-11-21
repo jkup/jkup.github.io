@@ -32,6 +32,10 @@ self.__precacheManifest = [
     "revision": "034633233ed86ca6f04c4eb849f11ad9"
   },
   {
+    "url": "2018/11/20/converting-arrow-functions-to-function-expressions-babel.html",
+    "revision": "79b9eaec9a137ab6118119aa0dee5352"
+  },
+  {
     "url": "css/style.css",
     "revision": "0187d9201814c2a767396faf31ab2609"
   },
@@ -89,7 +93,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "a5a8a064ab6407fa912033f67ae68f46"
+    "revision": "1fc619ba789d1324e5904e86225b8dee"
   },
   {
     "url": "js/prism.js",
@@ -101,7 +105,7 @@ self.__precacheManifest = [
   },
   {
     "url": "sitemap.xml",
-    "revision": "91c876357aaeaf4a2b5238cdbe821c7e"
+    "revision": "1b4ad448b20c58f119352dfa31357227"
   },
   {
     "url": "workbox-config.js",
