@@ -247,7 +247,7 @@ export default function(babel) {
 }
 ```
 
-Most of that is just boilerplate. The important bit is taht we hook into all ArrowFunctionExpression's and call `arrowFunctionToExpression()` on them. That results in the following output:
+Most of that is just boilerplate. The important bit is that we hook into all ArrowFunctionExpression's and call `arrowFunctionToExpression()` on them. That results in the following output:
 
 ```javascript
 const log = function(message) {
